@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Артем Власов](https://up.htmlacademy.ru/htmlcss/31/user/1596609).
-* Наставник: `Неизвестно`.
+- Студент: [Артем Власов](https://up.htmlacademy.ru/htmlcss/31/user/1596609).
+- Наставник: [Александр Калинин](https://htmlacademy.ru/profile/id918955).
 
 ---
 
