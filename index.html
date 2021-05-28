@@ -3,19 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header>
       <section>
         <a>
-          <img src="https://via.placeholder.com/150x100" alt="Логотип компании" width="150" height="100">
+          <img src="img/logo.svg" alt="Логотип компании Техномарт" width="108" height="18">
         </a>
         <form>
-          <input type="search" placeholder="Поиск">
+            <svg width="17" height="17"><use href="sprite.svg#icon-search"></use></svg>
+            <input type="search" placeholder="Поиск">
         </form> 
         <ul>
-          <li><a href="#">Закладки</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li><a href="#"><svg width="14" height="16"><use href="sprite.svg#icon-bookmark"></use></svg> Закладки</a></li>
+          <li><a href="#"><svg width="15" height="15"><use href="sprite.svg#icon-cart"></use></svg> Корзина</a></li>
           <li><a href="#">Оформить заказ</a></li>
         </ul>
       </section>
@@ -28,7 +33,7 @@
           <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         </div>
         <div>
-          <a href="#">Войти</a>
+          <a href="#"><svg width="20" height="17"><use href="/sprite.svg#icon-login"></use></svg> Войти</a>
           <a href="#">Регистрация</a>
         </div>
       </section>
@@ -113,7 +118,7 @@
               <article>
                 <h3>Перфоратор BOSCH BFG 9000</h3>
                 <p>
-                  <img src="https://via.placeholder.com/150x100" alt="Перфоратор BOSCH BFG 9000" width="150" height="100">
+                  <img src="img/bosh-bfg-9000.jpg" alt="" width="184" height="164">
                 </p>
                 <div>
                   <button type="button">Купить</button>
@@ -127,7 +132,7 @@
               <article>
                 <h3>Перфоратор BOSCH BFG 3000</h3>
                 <p>
-                  <img src="https://via.placeholder.com/150x100" alt="Перфоратор BOSCH BFG 3000" width="150" height="100">
+                  <img src="img/bosh-bfg-3000.jpg" alt="" width="127" height="112">
                 </p>
                 <div>
                   <button type="button">Купить</button>
@@ -141,7 +146,7 @@
               <article>
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <p>
-                  <img src="https://via.placeholder.com/150x100" alt="Перфоратор BOSCH BFG 6000" width="150" height="100">
+                  <img src="img/bosh-bfg-6000.jpg" alt="" width="144" height="128">
                 </p>
                 <div>
                   <button type="button">Купить</button>
@@ -155,7 +160,7 @@
               <article>
                 <h3>Перфоратор BOSCH BFG 2000</h3>
                 <p>
-                  <img src="https://via.placeholder.com/150x100" alt="Перфоратор BOSCH BFG 2000" width="150" height="100">
+                  <img src="img/bosh-bfg-2000.jpg" alt="" width="127" height="112">
                 </p>
                 <div>
                   <button type="button">Купить</button>
@@ -173,14 +178,14 @@
           <a href="#">Все производители</a>
         </div>
         <ul>
-          <li><a href="#"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Bosh"></a></li>
-          <li><a href="#"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Makita"></a></li>
-          <li><a href="#"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Dewalt"></a></li>
-          <li><a href="#"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Интерскол"></a></li>
-          <li><a href="#"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Hitachi"></a></li>
-          <li><a href="#"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt="LG"></a></li>
-          <li><a href="#"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt="AEG"></a></li>
-          <li><a href="#"><img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Metabo"></a></li>
+          <li><a href="#"><img src="img/bosch.png" width="150" height="100" alt="Bosh"></a></li>
+          <li><a href="#"><img src="img/makita.png" width="150" height="100" alt="Makita"></a></li>
+          <li><a href="#"><img src="img/dewalt.png" width="150" height="100" alt="Dewalt"></a></li>
+          <li><a href="#"><img src="img/interscol.png" width="150" height="100" alt="Интерскол"></a></li>
+          <li><a href="#"><img src="img/hitachi.png" width="150" height="100" alt="Hitachi"></a></li>
+          <li><a href="#"><img src="img/lg.png" width="150" height="100" alt="LG"></a></li>
+          <li><a href="#"><img src="img/lg.png" width="150" height="100" alt="AEG"></a></li>
+          <li><a href="#"><img src="img/metabo.png" width="150" height="100" alt="Metabo"></a></li>
         </ul>
       </section>
       <section>
@@ -203,9 +208,6 @@
             <br>поднимая его на ваш этаж!</p>
           </div>
           <div>
-            <img src="https://via.placeholder.com/150x100" alt="Грузовик">
-          </div>
-          <div>
             <h3>Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит, 
               <br>а также в случае пожара, спровоцированного его 
@@ -214,16 +216,10 @@
               <br>Дом уж восстановите как-нибудь сами.</p>
           </div>
           <div>
-            <img src="https://via.placeholder.com/150x100" alt="Грузовик">
-          </div>
-          <div>
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! 
               <br>Кредитные консультанты придут вам на помощь.</p>
               <button type="button">Отправить заявку</button>
-          </div>
-          <div>
-            <img src="https://via.placeholder.com/150x100" alt="Грузовик">
           </div> 
         </div>     
       </section>
@@ -242,7 +238,7 @@
         <div>
           <h2>Контакты</h2>
           <p>Вы можете забрать товары сами, заехав в наш офис:</p>
-          <a href="#"><img src="https://via.placeholder.com/150x100" alt="Карта" width="150" height="100"></a>
+          <button type="button>"><img src="img/map.png" alt="Карта" width="300" height="158"></button>
           <button type="button">Заблудились? Напишите нам</button>
         </div>
       </section>
@@ -251,7 +247,7 @@
       <section>
         <div>
           <a>
-            <img src="https://via.placeholder.com/150x100" alt="Логотип компании" width="150" height="100">
+            <img src="img/logo.svg" alt="Логотип компании" width="138" height="23">
           </a>
           <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>+7 800 555-86-28</p>
         </div>
@@ -313,7 +309,7 @@
       <button type="button">Закрыть</button>
     </section>
     <section>
-      <!--iframe-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8301744005787!2d30.31430331609816!3d59.96814048188694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bcebbd7f3%3A0xe0d833dfef898281!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTcwMjI!5e0!3m2!1sru!2sru!4v1622217120341!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <button type="button">Закрыть</button>
     </section>
   </body>
