@@ -285,6 +285,9 @@ body {
 /*Авторизация хэдера*/
 .header-middle__authorization {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   gap: 10px;
 }
 .header-middle__authorization-button {
@@ -296,10 +299,11 @@ body {
   font-size: 21px;
   line-height: 21px;
   background-color: var(--basic-white);
-  gap: 6px;
   border: none;
   outline: none;
   transition: all 0.1s;
+}
+.header-middle__authorization-button:not(:last-child) {
 }
 .signin-button {
   width: 121px;
@@ -311,6 +315,7 @@ body {
 }
 .header-middle__signin-icon {
   fill: var(--basic-greylight);
+  margin-right: 6px;
 }
 .header-middle__authorization-button:hover,
 .header-middle__authorization-button:hover .header-middle__signin-icon {
