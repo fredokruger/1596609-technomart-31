@@ -285,10 +285,6 @@ body {
 /*Авторизация хэдера*/
 .header-middle__authorization {
   display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  gap: 10px;
 }
 .header-middle__authorization-button {
   display: flex;
@@ -304,6 +300,7 @@ body {
   transition: all 0.1s;
 }
 .header-middle__authorization-button:not(:last-child) {
+  margin-right: 10px;
 }
 .signin-button {
   width: 121px;
@@ -411,7 +408,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 14px;
   padding: 22px;
 }
 .offers__item--materials {
@@ -472,6 +468,7 @@ body {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin-bottom: 14px;
 }
 .offers__link,
 .offers__link:link,
@@ -544,7 +541,6 @@ body {
   display: flex;
   width: auto;
   justify-content: center;
-  gap: 10px;
   bottom: 36px;
   right: 0;
   left: 0;
@@ -557,6 +553,9 @@ body {
   border-radius: 50%;
   background-color: var(--basic-white);
   cursor: pointer;
+}
+.offer-slider__control:not(:last-child) {
+  margin-right: 10px;
 }
 .offer-slider__dot--prev:checked
   ~ .offer-slider__controls
