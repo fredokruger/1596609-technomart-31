@@ -525,8 +525,9 @@ body {
 }
 .offer-slider__controls {
   position: absolute;
-  z-index: 100;
+  z-index: 50;
   display: flex;
+  width: auto;
   justify-content: center;
   gap: 10px;
   bottom: 36px;
