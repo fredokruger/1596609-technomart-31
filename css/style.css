@@ -504,7 +504,6 @@ body {
   padding: 0;
 }
 .offer-slider__slides {
-  display: flex;
   width: 200%;
   transition: transform 0.3s;
 }
