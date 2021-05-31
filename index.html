@@ -36,7 +36,7 @@
           <p class="header-middle__adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         </div>
         <div class="header-middle__authorization">
-          <button type="button" class="header-middle__authorization-button signin-button" href="#"><svg class="header-middle__signin-icon" width="20" height="17"><use href="/sprite.svg#icon-login"></use></svg> Войти</button>
+          <button type="button" class="header-middle__authorization-button signin-button" href="#"><svg class="header-middle__signin-icon" width="20" height="17"><use href="sprite.svg#icon-login"></use></svg> Войти</button>
           <button type="button" class="header-middle__authorization-button signup-button" href="#">Регистрация</button>
         </div>
         </div>
@@ -85,20 +85,19 @@
           <li class="offers__item offer-slider">
             <article class="offer-slider__container">
               <div class="offer-slider__arrows">
-                <button class="offer-slider__arrow offer-slider__arrow--prev" type="button">Назад</button>
-                <button class="offer-slider__arrow offer-slider__arrow--next" type="button">Вперед</button>
+                <button class="offer-slider__arrow offer-slider__arrow--prev" type="button"><svg width="22" height="40" class="offer-slider__arrow-icon"><use href="sprite.svg#icon-arrow-left"></use></svg></button>
+                <button class="offer-slider__arrow offer-slider__arrow--next" type="button"><svg width="22" height="40" class="offer-slider__arrow-icon"><use href="sprite.svg#icon-arrow-right"></use></svg></button>
               </div>
               <a class="offer-slider__catalog button" href="catalog/index.html">Открыть каталог</a>
               <div class="offer-slider__dots">
-                <input type="radio" id="dot-1" name="toggle"class="offer-slider__dot offer-slider__dot--prev"></input>
+                <input type="radio" id="dot-1" name="toggle"class="offer-slider__dot offer-slider__dot--prev" checked></input>
                 <input type="radio" id="dot-2" name="toggle" class="offer-slider__dot offer-slider__dot--next"></input>
-              </div>
               <div class="offer-slider__controls">
-                <label class="offer-slider__control" for="dot-1"></label>
-                <label class="offer-slider__control" for="dot-2"></label>
+                <label class="offer-slider__control offer-slider__control--prev" for="dot-1"></label>
+                <label class="offer-slider__control offer-slider__control--next" for="dot-2"></label>
               </div>
               <div class="offer-slider__slides">
-              <div class="offer-slider__item offer-slider__perforator offer-slider__item--current">
+              <div class="offer-slider__item offer-slider__perforator">
                 <h3 class="offer-slider__title">Перфораторы</h3>
                 <p class="offer-slider__slogan">Настоящие мужские игрушки</p>
               </div>
@@ -107,6 +106,7 @@
                 <p class="offer-slider__slogan">Соседям на радость!</p>
               </div>
               </div>
+            </div>
               
             </article>
           </li>
