@@ -410,8 +410,8 @@ body {
   padding: 22px;
 }
 .offers__item--materials {
-  background: url("../img/icons/icon-1.svg") no-repeat 83% 50%,
-    var(--special-yellow);
+  background-image: url("../img/icons/icon-1.svg") no-repeat 83% 50%;
+  background-color: var(--special-yellow);
 }
 .offers__item--instruments {
   background: url("../img/icons/icon-2.svg") no-repeat 83% 50%,
