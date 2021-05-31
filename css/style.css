@@ -165,10 +165,14 @@ body {
   .header-top__search-icon {
   opacity: 1;
 }
-.header-top__search-input::placeholder,
-.header-top__search-input::-moz-placeholder {
+.header-top__search-input::-webkit-input-placeholder {
   font-size: 18px;
   color: var(--basic-white);
+}
+.header-top__search-input::-moz-placeholder {
+  color: var(--basic-white);
+  opacity: 1;
+  font-size: 18px;
 }
 .header-top__search-input::-webkit-search-decoration,
 .header-top__search-input::-webkit-search-cancel-button,
