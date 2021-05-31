@@ -416,20 +416,28 @@ body {
   background-position: 83% 50%;
 }
 .offers__item--instruments {
-  background: url("../img/icons/icon-2.svg") no-repeat 83% 50%,
-    var(--special-blue);
+  background-color: var(--special-blue);
+  background-image: url("../img/icons/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 83% 50%;
 }
 .offers__item--machinery {
-  background: url("../img/icons/icon-3.svg") no-repeat 83% 50%,
-    var(--special-lilac);
+  background-color: var(--special-lilac);
+  background-image: url("../img/icons/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 83% 50%;
 }
 .offers__item--sales {
-  background: url("../img/icons/icon-4.svg") no-repeat 83% 50%,
-    var(--special-greenlight);
+  background-color: var(--special-greenlight);
+  background-image: url("../img/icons/icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: 83% 50%;
 }
 .offers__item--delivery {
-  background: url("../img/icons/icon-5.svg") no-repeat 83% 50%,
-    var(--special-yellow);
+  background-color: var(--special-yellow);
+  background-image: url("../img/icons/icon-5.svg");
+  background-repeat: no-repeat;
+  background-position: 83% 50%;
 }
 .new-item {
   position: relative;
