@@ -135,6 +135,8 @@ body {
   border: none;
   padding-left: 42px;
   color: var(--basic-white);
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 .header-top__search-input:focus {
   background-color: var(--basic-white);
