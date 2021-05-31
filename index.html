@@ -60,9 +60,9 @@
     <main class="main-container">
       <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
       <section class="offers">
-        <h2 class="offers__main-title">Ассортимент, доставка и акции</h2>
+        <h2 class="visually-hidden">Ассортимент, доставка и акции</h2>
         <ul class="offers__list">
-          <li class="offers__item offers__item--materials">
+          <li class="offers__item offers__item--materials new-item">
             <h3 class="offers__title">Материалы</h3>
             <a class="offers__link" href="#">На любой вкус</a>
           </li>
@@ -84,25 +84,30 @@
           </li>
           <li class="offers__item offer-slider">
             <article class="offer-slider__container">
-              <div class="offer-slider__slides">
-              <div class="offer-slider__item offer-slider__item--current">
-                <h3 class="offer-slider__title">Перфораторы</h3>
-                <p class="offer-slider__slogan">Настоящие мужские игрушки</p>
-              </div>
-              <div class="offer-slider__item">
-                <h3 class="offer-slider__title">Дрели</h3>
-                <p class="offer-slider__slogan">Соседям на радость!</p>
-              </div>
-              </div>
               <div class="offer-slider__arrows">
                 <button class="offer-slider__arrow offer-slider__arrow--prev" type="button">Назад</button>
                 <button class="offer-slider__arrow offer-slider__arrow--next" type="button">Вперед</button>
               </div>
-              <a class="offer-slider__catalog-link button" href="catalog/index.html">Открыть каталог</a>
+              <a class="offer-slider__catalog button" href="catalog/index.html">Открыть каталог</a>
               <div class="offer-slider__dots">
-                <button class="offer-slider__dot offer-slider__dot--prev" type="button">Назад</button>
-                <button class="offer-slider__dot offer-slider__dot--next" type="button">Вперед</button>
+                <input type="radio" id="dot-1" name="toggle"class="offer-slider__dot offer-slider__dot--prev"></input>
+                <input type="radio" id="dot-2" name="toggle" class="offer-slider__dot offer-slider__dot--next"></input>
               </div>
+              <div class="offer-slider__controls">
+                <label class="offer-slider__control" for="dot-1"></label>
+                <label class="offer-slider__control" for="dot-2"></label>
+              </div>
+              <div class="offer-slider__slides">
+              <div class="offer-slider__item offer-slider__perforator offer-slider__item--current">
+                <h3 class="offer-slider__title">Перфораторы</h3>
+                <p class="offer-slider__slogan">Настоящие мужские игрушки</p>
+              </div>
+              <div class="offer-slider__item offer-slider__drill">
+                <h3 class="offer-slider__title">Дрели</h3>
+                <p class="offer-slider__slogan">Соседям на радость!</p>
+              </div>
+              </div>
+              
             </article>
           </li>
         </ul>

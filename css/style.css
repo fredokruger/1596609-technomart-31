@@ -315,6 +315,7 @@ body {
 .header-middle__authorization-button:hover .header-middle__signin-icon {
   color: var(--basic-red);
   fill: var(--basic-grey);
+  cursor: pointer;
 }
 .header-middle__authorization-button:active,
 .header-middle__authorization-button:active .header-middle__signin-icon {
@@ -326,6 +327,7 @@ body {
   width: 100%;
   background-color: var(--basic-background);
   padding-bottom: 60px;
+  margin-bottom: 59px;
 }
 .header-bottom__container {
   max-width: 980px;
@@ -367,4 +369,170 @@ body {
 }
 .main-nav__link:active {
   color: rgba(255, 255, 255, 0.5);
+}
+/*Предложения, слайдер*/
+.main-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.offers {
+  margin-bottom: 59px;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.offers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 123px);
+  gap: 20px;
+}
+.offer-slider {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.offers__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 22px;
+}
+.offers__item--materials {
+  background: url("/img/icons/icon-1.svg") no-repeat 83% 50%,
+    var(--special-yellow);
+}
+.offers__item--instruments {
+  background: url("/img/icons/icon-2.svg") no-repeat 83% 50%,
+    var(--special-blue);
+}
+.offers__item--machinery {
+  background: url("/img/icons/icon-3.svg") no-repeat 83% 50%,
+    var(--special-lilac);
+}
+.offers__item--sales {
+  background: url("/img/icons/icon-4.svg") no-repeat 83% 50%,
+    var(--special-greenlight);
+}
+.offers__item--delivery {
+  background: url("/img/icons/icon-5.svg") no-repeat 83% 50%,
+    var(--special-yellow);
+}
+.new-item {
+  position: relative;
+  overflow: hidden;
+}
+.new-item::after {
+  content: "new";
+  position: absolute;
+  display: flex;
+  width: 100px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  top: 7px;
+  right: -28px;
+  margin: 0;
+  transform: rotate(45deg);
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+.offers__title {
+  color: var(--basic-white);
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.offers__link,
+.offers__link:link,
+.offers__link:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 38px;
+  text-decoration: none;
+  color: var(--basic-white);
+  background-color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  transition: all 0.1s;
+}
+.offers__link:hover {
+  background-color: rgba(197, 197, 197, 0.3);
+}
+.offers__link:active {
+  background-color: rgba(169, 169, 169, 0.3);
+}
+/*Слайдер*/
+.offer-slider {
+  padding: 0;
+}
+.offer-slider__slides {
+  display: flex;
+  width: 300%;
+}
+.offer-slider__container {
+  overflow: hidden;
+  position: relative;
+}
+.offer-slider__item {
+  float: left;
+  width: 620px;
+  height: 266px;
+  padding: 24px 27px;
+}
+.offer-slider__perforator {
+  background: url("/img/perforator.jpg");
+}
+.offer-slider__dot {
+  display: none;
+}
+.offer-slider__control {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+.offer-slider__arrow {
+  position: absolute;
+  height: 10px;
+  font-size: 0;
+}
+.offer-slider__arrow--prev {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.offer-slider__arrow--next {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.offer-slider__catalog {
+  position: absolute;
 }
