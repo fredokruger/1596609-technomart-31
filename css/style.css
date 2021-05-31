@@ -275,7 +275,7 @@ body {
   width: 19px;
   height: 19px;
   margin-right: 16px;
-  background: url("../img/icons/phone.svg") no-repeat center;
+  background: url("/img/icons/phone.svg") no-repeat center;
 }
 .header-middle__adress {
   font-size: 14px;
