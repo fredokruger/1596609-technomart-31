@@ -57,7 +57,8 @@
         </div>
       </section>
     </header>
-    <main class="main-container container">
+    <main>
+      <div class="container">
       <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
       <section class="offers">
         <h2 class="visually-hidden">Ассортимент, доставка и акции</h2>
@@ -112,6 +113,8 @@
           </li>
         </ul>
       </section>
+      </div>
+      <div class="container">
       <section class="popular-items popular">
         <div class="popular__header">
           <h2 class="popular__main-title">Популярные товары:</h2>
@@ -176,6 +179,8 @@
             </li>
           </ul>
       </section>
+      </div>
+      <div class="container">
       <section class="popular-manufacturers popular">
         <div class="popular__header">
           <h2 class="popular__main-title">Популярные производители:</h2>
@@ -192,41 +197,51 @@
           <li class="popular-manufacturers__item"><a class="popular-manufacturers__link" href="#"><img class="popular-manufacturers__image" src="img/metabo.png" width="206" height="73" alt="Metabo"></a></li>
         </ul>
       </section>
+      </div>
       <section class="services">
+        <div class="services-container container">
         <div class="services__header">
           <h2 class="services__title">Сервисы</h2>
           <p class="services__slogan">Хороший интернет-магазин отличается от плохого не только ценами!
           <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
         <div class="services__info">
-          <ul class="services__dots">
-            <li class="services__dot-item services__dot-item--active"><input class="services__dot" type="radio" name="service-info" value="delivery" id="delivery" checked> <label for="delivery">Доставка</label></li>
-            <li class="services__dot-item"><input class="services__dot" type="radio" name="service-info" value="guarantee" id="guarantee"><label for="guarantee">Гарантия</label></li>
-            <li class="services__dot-item"><input class="services__dot" type="radio" name="service-info" value="credit" id="credit"><label for="credit">Кредит</label></li>
+          <div class="services__dots">
+          <input class="services__dot services__dot--delivery" type="radio" name="service-info" value="delivery" id="delivery" checked>
+          <input class="services__dot services__dot--guarantee" type="radio" name="service-info" value="guarantee" id="guarantee">
+          <input class="services__dot services__dot--credit" type="radio" name="service-info" value="credit" id="credit"> 
+          <ul class="services__list">
+            <li class="services__item"><label class="services__name services__name--delivery" for="delivery">Доставка</label></li>
+            <li class="services__item"><label class="services__name services__name--guarantee" for="guarantee">Гарантия</label></li>
+            <li class="services__item"><label class="services__name services__name--credit" for="credit">Кредит</label></li>
           </ul>
+          <div class="services__slider">
           <div class="services__slides">
-          <div class="services__slide services__slide--current">
-            <h3 class="services__slide-title">Доставка</h3>
-            <p class="services__slide-slogan">Мы с удовольствием доставим ваш товар прямо 
+          <div class="service service--delivery">
+            <h3 class="service__title">Доставка</h3>
+            <p class="service__slogan">Мы с удовольствием доставим ваш товар прямо 
             <br>к вашему подъезду совершенно бесплатно!
             <br>Ведь мы неплохо заработаем, 
             <br>поднимая его на ваш этаж!</p>
           </div>
-          <div class="services__slide">
-            <h3 class="services__slide-title">Гарантия</h3>
-            <p class="services__slide-slogan">Если купленный у нас товар поломается или заискрит, 
+          <div class="service service--guarantee">
+            <h3 class="service__title">Гарантия</h3>
+            <p class="service__slogan">Если купленный у нас товар поломается или заискрит, 
               <br>а также в случае пожара, спровоцированного его 
               <br>возгоранием,  вы всегда можете быть уверены в нашей 
               <br>гарантии. Мы обменяем сгоревший товар на новый. 
               <br>Дом уж восстановите как-нибудь сами.</p>
           </div>
-          <div class="services__slide">
-            <h3 class="services__slide-title">Кредит</h3>
-            <p class="services__slide-slogan">Залезть в долговую яму стало проще! 
+          <div class="service service--credit">
+            <h3 class="service__title">Кредит</h3>
+            <p class="service__slogan service__slogan--credit">Залезть в долговую яму стало проще! 
               <br>Кредитные консультанты придут вам на помощь.</p>
-              <button type="button">Отправить заявку</button>
+              <a href="#" class="button">Отправить заявку</a>
           </div>  
+        </div>
       </div> 
+      </div>
+      </div>
       </div>   
       </section>
       <section class="company-info">
