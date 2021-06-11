@@ -884,6 +884,7 @@ body {
   color: var(--basic-white);
   position: relative;
   overflow: hidden;
+  transition: all 0.1s;
 }
 .services__name::after {
   content: "";
