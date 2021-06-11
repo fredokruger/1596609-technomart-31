@@ -68,6 +68,7 @@
   --special-greenlight: #8ed78f;
   --special-yellowlight: #ffd180;
   --special-background: #293449;
+  --special-shadow: #405069;
   --background-nav: #32425c;
   --success: #5fbb2d;
   --warning: #ffbf47;
@@ -875,27 +876,29 @@ body {
   width: 240px;
   padding: 13.5px 10px 18.5px 22px;
   background-color: var(--background-nav);
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  box-shadow: 0px 1px 0px var(--special-background),
+    inset 0px 1px 0px var(--special-shadow);
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-white);
+  position: relative;
+  overflow: hidden;
 }
 .services__name::after {
   content: "";
   position: absolute;
   width: 10px;
-  background: rgba(0, 0, 0, 0.0001);
-  opacity: 0.25;
-  mix-blend-mode: normal;
+  height: 300%;
+  background-image: url("/img/service-shadow.png");
   right: 0;
   bottom: 0;
   top: 0;
+  margin: auto 0;
 }
 .services__name:hover {
   cursor: pointer;
   background-color: var(--special-background);
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
 }
 
 .services__slider {
@@ -950,12 +953,7 @@ body {
 .services__dot--credit:checked ~ .services__list .services__name--credit {
   background-color: var(--basic-white);
   color: var(--background-nav);
-}
-.services__dot--delivery:checked ~ .services__list .services__name--delivery {
-  box-shadow: inset 0px 2px 0px #405069;
-}
-.services__dot--credit:checked ~ .services__list .services__name--credit {
-  box-shadow: inset 0px -2px 0px #405069;
+  box-shadow: 0px 1px 0px var(--basic-white);
 }
 .services__dot--delivery:checked
   ~ .services__list
