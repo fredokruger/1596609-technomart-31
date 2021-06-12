@@ -281,7 +281,7 @@ body {
 .header-middle__contacts {
   text-align: center;
   position: absolute;
-  left: 50%;
+  left: calc(50% - 12px);
   transform: translate(-50%);
 }
 .header-middle__phone-number,
