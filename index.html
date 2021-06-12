@@ -14,7 +14,7 @@
     <header class="main-header">
       <section class="header-top">
         <div class="header-top__container container">
-          <a href="" class="logo">
+          <a href="" class="logo logo--header">
             <img class="logo__image" src="img/logo.svg" alt="Логотип компании Техномарт" width="108" height="18">
           </a>
         <form class="search">
@@ -269,51 +269,48 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__container container">
       <section class="main-footer__top">
-        <div class="main-footer__logo logo">
-          <a class="logo__link">
+        <div class="container footer-top-container">
+          <div class="main-footer__logo">
+          <a href="" class="logo logo--footer">
             <img class="logo__image" src="img/logo.svg" alt="Логотип компании" width="138" height="23">
           </a>
           <p class="main-footer__adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>+7 800 555-86-28</p>
         </div>
         <div class="main-footer__navigation">
           <ul class="main-footer__navigation-list">
-            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link" href="#">Компания</a></li>
-            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link" href="#">Новости</a></li>
-            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link" href="#">Каталог</a></li>
-            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link" href="#">Доставка</a></li>
-            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link" href="#">Контакты</a></li>
+            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--top" href="#">Компания</a></li>
+            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--top" href="#">Новости</a></li>
+            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--top" href="#">Каталог</a></li>
+            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--top" href="#">Доставка</a></li>
+            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--top" href="#">Контакты</a></li>
           </ul>
           <ul class="main-footer__navigation-list">
-            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--yellow" href="#">Материалы</a></li>
-            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--yellow" href="#">Техника</a></li>
-            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--yellow" href="#">Инструмент</a></li>
-            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--yellow" href="#">Спецпредложения</a></li>
+            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--bottom" href="#">Материалы</a></li>
+            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--bottom" href="#">Техника</a></li>
+            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--bottom" href="#">Инструмент</a></li>
+            <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--bottom" href="#">Спецпредложения</a></li>
           </ul>
         </div>
+      </div>
       </section>
       <section class="main-footer__bottom">
-        <div class="main-footer__copyright">
-          <p class="main-footer__copyright-info">© 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
-        </div>
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item"><a class="social__link" href="#">Вконтакте</a></li>
-            <li class="social__item"><a class="social__link" href="#">Фэйсбук</a></li>
-            <li class="social__item"><a class="social__link" href="#">Инстаграм</a></li>
+        <div class="container footer-bottom-container">
+          <p class="main-footer__copyright">© 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
+          <ul class="main-footer__social social">
+            <li class="social__item"><a class="social__link social__link--vk" href="#">Вконтакте</a></li>
+            <li class="social__item"><a class="social__link social__link--fb" href="#">Фэйсбук</a></li>
+            <li class="social__item"><a class="social__link social__link--inst" href="#">Инстаграм</a></li>
           </ul>
+          <div class="main-footer__contact-container">
+            <p class="main-footer__contact-slogan">Обратная связь:<br><a class="main-footer__contact-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          </div>
+          <div class="main-footer__contact-container">
+            <p class="main-footer__contact-slogan">Разработано —<br><a class="main-footer__contact-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a></p>
+          </div>
         </div>
-          <div class="main-footer__contact">
-            <p class="main-footer__contact-slogan">Обратная связь:</p>
-            <a class="main-footer__contact-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="main-footer__developer">
-            <p class="main-footer__developer-slogan">Разработано —</p>
-            <a class="main-footer__developer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </div>
       </section>
-    </div>
+    
     </footer>
     <section class="contact-popup">
       <form class="contact-popup__form">
