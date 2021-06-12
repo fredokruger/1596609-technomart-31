@@ -128,6 +128,7 @@ body {
   align-items: center;
   justify-content: center;
   line-height: 0;
+  flex-shrink: 0;
 }
 .logo--header {
   width: 220px;
@@ -262,9 +263,10 @@ body {
   background-color: var(--basic-background);
 }
 .header-middle__container {
-  padding: 46px 0;
+  padding: 46px 20px 46px 50px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 /*Заголовок хэдэра*/
 .header-middle__title {
@@ -274,11 +276,13 @@ body {
   font-size: inherit;
   color: var(--basic-red);
   margin: 0;
-  margin-left: 30px;
 }
 /*Контакты хэдера*/
 .header-middle__contacts {
   text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 .header-middle__phone-number,
 .header-middle__phone-number:link,
@@ -1078,11 +1082,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-.main-footer__top {
+.footer-top {
   background-color: var(--background-nav);
   padding-bottom: 54px;
 }
-.footer-top-container {
+.footer-top__container {
   display: flex;
   justify-content: space-between;
 }
@@ -1091,70 +1095,72 @@ body {
   height: 63px;
   margin-bottom: 27px;
 }
-.main-footer__adress {
+.footer-top__adress {
   font-size: 18px;
   color: var(--footer-contacts);
 }
-.main-footer__navigation {
+.footer-top__navigation {
   padding-top: 37px;
 }
-.main-footer__navigation-list {
+.footer-top__navigation-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: flex-end;
 }
-.main-footer__navigation-list:not(:last-child) {
+.footer-top__navigation-list:not(:last-child) {
   margin-bottom: 34px;
 }
-.main-footer__navigation-link,
-.main-footer__navigation-link:link,
-.main-footer__navigation-link:visited {
+.footer-top__navigation-link,
+.footer-top__navigation-link:link,
+.footer-top__navigation-link:visited {
   text-decoration: none;
   font-size: 18px;
   transition: all 0.1s;
 }
-.main-footer__navigation-link:hover {
+.footer-top__navigation-link:hover {
   text-decoration: underline;
 }
-.main-footer__navigation-link:active {
+.footer-top__navigation-link:active {
   opacity: 0.5;
   text-decoration: none;
 }
-.main-footer__navigation-item:not(:last-child) {
+.footer-top__navigation-item:not(:last-child) {
   margin-right: 58px;
 }
-.main-footer__navigation-link--top {
+.footer-top__navigation-link--top {
   color: var(--footer-contacts);
 }
-.main-footer__navigation-link--bottom {
+.footer-top__navigation-link--bottom {
   color: var(--special-yellowlight);
 }
 /*футер нижний*/
-.main-footer__bottom {
+.footer-bottom {
   background-color: var(--special-background);
 }
-.footer-bottom-container {
+.footer-bottom__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-top: 34px;
   padding-bottom: 29px;
+  position: relative;
 }
-.main-footer__copyright {
+.footer-bottom__copyright {
   line-height: 18px;
   color: var(--basic-white);
-  margin-right: 162px;
 }
 .social {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
+  position: absolute;
+  left: calc(50% - 14px);
+  transform: translate(-50%);
 }
-.main-footer__social {
-  margin-right: 118px;
-}
+
 .social__item:not(:last-child) {
   margin-right: 4px;
 }
@@ -1184,25 +1190,31 @@ body {
 .social__link--inst {
   background-image: url("../img/icons/inst.svg");
 }
-.main-footer__contact-container:not(:last-of-type) {
-  margin-right: 51px;
+.footer-contacts {
+  display: flex;
 }
-.main-footer__contact-slogan {
+.footer-contacts__info {
   color: var(--basic-white);
   line-height: 18px;
   margin: 0;
 }
-.main-footer__contact-link,
-.main-footer__contact-link:link,
-.main-footer__contact-link:visited {
+.footer-contacts__info:not(:last-child) {
+  margin-right: 51px;
+}
+.footer-contacts__info:last-child {
+  margin-right: 13px;
+}
+.footer-contacts__link,
+.footer-contacts__link:link,
+.footer-contacts__link:visited {
   color: var(--special-yellowlight);
   text-decoration: none;
   transition: all 0.1s;
 }
-.main-footer__contact-link:hover {
+.footer-contacts__link:hover {
   text-decoration: underline;
 }
-.main-footer__contact-link:active {
+.footer-contacts__link:active {
   color: var(--basic-red);
   text-decoration: none;
 }
