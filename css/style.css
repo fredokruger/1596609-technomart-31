@@ -1217,9 +1217,7 @@ body {
   text-decoration: none;
 }
 /*Попап форма*/
-.contact-popup-container,
-.map-popup-container,
-.order-popup-container {
+.popup-container {
   display: none;
   width: 100vw;
   height: 100vh;
