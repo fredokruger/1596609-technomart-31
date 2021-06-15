@@ -36,8 +36,8 @@
           <p class="header-middle__adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         </div>
         <div class="header-middle__authorization">
-          <button type="button" class="header-middle__authorization-button sign-button signin-button" href="#"><svg class="signin-button__icon" width="20" height="17"><use href="sprite.svg#icon-login"></use></svg> Войти</button>
-          <button type="button" class="header-middle__authorization-button sign-button signup-button" href="#">Регистрация</button>
+          <a class="header-middle__authorization-button sign-button signin-button" href="#"><svg class="signin-button__icon" width="20" height="17"><use href="sprite.svg#icon-login"></use></svg> Войти</a>
+          <a class="header-middle__authorization-button sign-button signup-button" href="#">Регистрация</a>
         </div>
         </div>
       </section>
@@ -261,8 +261,8 @@
           <h2 class="contacts__title">Контакты</h2>
           <p class="contacts__slogan">Вы можете забрать товары сами,<br>заехав в наш офис:</p>
           <div class="contacts__buttons">
-          <button class="contacts__map-button" type="button"><img class="contacts__map-image" src="img/map.png" alt="Карта" width="300" height="158"></button>
-          <button class="contacts__button button" type="button">Заблудились? Напишите нам</button>
+          <a href="#" class="contacts__map-button"><img class="contacts__map-image" src="img/map.png" alt="Карта" width="300" height="158"></a>
+          <a href="#" class="contacts__button button">Заблудились? Напишите нам</a>
           </div>
         </div>
         </div>
@@ -308,37 +308,48 @@
         </div>
         </div>
       </section>
-    
     </footer>
+    <div class="contact-popup-container">
     <section class="contact-popup">
       <form class="contact-popup__form">
+        <div class="contact-popup__input-container">
         <div class="contact-popup__item">
-          <label for="name-contact">Ваше имя:</label>
-          <input id="name-contact" type="text" name="name" placeholder="Имя Фамилия" required>
+          <label class="contact-popup__label" for="name-contact">Ваше имя:</label>
+          <br><input class="contact-popup__input contact-popup__input--name" id="name-contact" type="text" name="name" placeholder="Имя Фамилия" required>
         </div>
         <div class="contact-popup__item">
-          <label for="email-contact">Ваше e-mail:</label>
-          <input id="email-contact" type="email" name="email" placeholder="email@example.com" required>
+          <label class="contact-popup__label" for="email-contact">Ваш e-mail:</label>
+          <br><input class="contact-popup__input contact-popup__input--email" id="email-contact" type="email" name="email" placeholder="email@example.com" required>
         </div>
-        <div class="contact-popup__item">
-          <label for="question-contact">Текст письма:</label>
-          <textarea id="question-contact" name="question" placeholder="В свободной форме" required></textarea>
+        <div class="contact-popup__item contact-popup__item--question">
+          <label class="contact-popup__label" for="question-contact">Текст письма:</label>
+          <br><textarea class="contact-popup__input contact-popup__input--question" id="question-contact" name="question" placeholder="В свободной форме" required></textarea>
         </div>
+        </div>
+        <div class="contact-popup__button-container">
         <button class="contact-popup__button button" type="submit">Отправить</button>
+        </div>
       </form>
       <button class="contact-popup__close close-button" type="button">Закрыть</button>
     </section>
+  </div>
+  <div class="map-popup-container">
     <section class="map-popup">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8301744005787!2d30.31430331609816!3d59.96814048188694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bcebbd7f3%3A0xe0d833dfef898281!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTcwMjI!5e0!3m2!1sru!2sru!4v1622217120341!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8301744005787!2d30.31430331609816!3d59.96814048188694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bcebbd7f3%3A0xe0d833dfef898281!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTcwMjI!5e0!3m2!1sru!2sru!4v1622217120341!5m2!1sru!2sru" width="943" height="449" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <button class="map-popup__close close-button" type="button">Закрыть</button>
     </section>
-    <section class="order-popup">
+    </div>
+    <div class="order-popup-container">
+      <section class="order-popup">
+      <div class="order-popup__slogan-container">
       <p class="order-popup__slogan">Товар добавлен в корзину!</p>
+      </div>
       <div class="order-popup__buttons">
           <a class="order-popup__pay-button button" href="#">Оформить заказ</a>
           <button class="order-popup__close-button button button--white" type="button">Продолжить покупки</button>
       </div>
       <button class="order-popup__close close-button" type="button">Закрыть</button>
   </section>
+  </div>
   </body>
 </html>
