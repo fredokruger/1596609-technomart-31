@@ -106,6 +106,9 @@ body {
   align-content: start;
 }
 /*Верхний хэдэр*/
+.main-header {
+  margin-bottom: 59px;
+}
 .header-top {
   width: 100%;
   background-color: var(--special-background);
@@ -249,15 +252,29 @@ body {
 .header-top__item-link:active .header-top__item-icon {
   opacity: 0.5;
 }
-.checkout {
+.header-top__item-link--checkout,
+.header-top__item-link--checkout:link,
+.header-top__item-link--checkout:visited {
   background-color: var(--basic-green);
 }
-.checkout:hover {
+.header-top__item-link--checkout:hover {
   background-color: var(--success);
 }
-.checkout:active {
+.header-top__item-link--checkout:active {
   background-color: var(--basic-green);
   color: rgba(255, 255, 255, 0.5);
+}
+.header-top__item-link--full,
+.header-top__item-link--full:link,
+.header-top__item-link--full:visited {
+  background-color: var(--basic-red);
+}
+.header-top__item-link--full:hover {
+  background-color: var(--button-hover);
+  cursor: pointer;
+}
+.header-top__item-link--full:active {
+  background-color: var(--error);
 }
 /*Средний хэдэр*/
 .header-middle {
@@ -317,6 +334,7 @@ body {
 /*Авторизация хэдера*/
 .header-middle__authorization {
   display: flex;
+  align-items: flex-start;
 }
 .sign-button,
 .sign-button:link,
@@ -335,12 +353,10 @@ body {
   margin-right: 10px;
 }
 .signin-button {
-  width: 121px;
-  height: 45px;
+  padding: 12px 27px 12px 19px;
 }
 .signup-button {
-  width: 150px;
-  height: 45px;
+  padding: 12px 24px;
 }
 .signin-button__icon {
   fill: var(--basic-greylight);
@@ -356,12 +372,95 @@ body {
   color: var(--basic-greylight);
   fill: var(--basic-greylight);
 }
+/*Авторизированный пользователь*/
+.account {
+  display: flex;
+  background-color: var(--basic-white);
+  margin-bottom: 1px;
+}
+.account__profile-icon {
+  margin-right: 21px;
+  fill: var(--basic-greylight);
+}
+.account__logout-icon {
+  fill: var(--basic-greylight);
+}
+.account__profile-link,
+.account__profile-link:link,
+.account__profile-link:visited {
+  display: flex;
+  padding: 12px 10px 12px 15px;
+  color: var(--basic-black);
+  text-decoration: none;
+  transition: all 0.1s;
+}
+.account__profile-link:hover .account__profile-icon {
+  fill: var(--basic-grey);
+}
+.account__profile-link:active,
+.account__profile-link:active .account__profile-icon {
+  fill: var(--basic-greylight);
+  color: var(--basic-greylight);
+}
+.account__profile-link .account__name {
+  font-size: 21px;
+  line-height: 21px;
+}
+.account__logout-link,
+.account__logout-link:link,
+.account__logout-link:visited {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.1s;
+  padding: 12px 17px 12px 10px;
+}
+.account__logout-link:hover .account__logout-icon {
+  fill: var(--basic-grey);
+}
+.account__logout-link:active .account__logout-icon {
+  fill: var(--basic-greylight);
+}
+.personal {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: -5px;
+}
+.personal__link,
+.personal__link:link,
+.personal__link:visited {
+  align-items: center;
+  text-decoration: none;
+  color: var(--background-nav);
+  padding: 5px 5px 5px;
+  line-height: 18px;
+}
+.personal__link:hover {
+  color: var(--basic-red);
+}
+.personal__link:active {
+  color: var(--basic-greylight);
+}
+.personal__item {
+  display: flex;
+  align-items: center;
+}
+.personal__item:not(:last-child)::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: var(--basic-grey);
+  border-radius: 50%;
+  margin: 0 9px;
+}
 /*Нижний хэдер*/
 .header-bottom {
   width: 100%;
   background-color: var(--basic-background);
   padding-bottom: 60px;
-  margin-bottom: 59px;
 }
 .header-bottom__container {
   display: flex;
@@ -377,7 +476,9 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   background-color: var(--background-nav);
+  box-shadow: inset 0px -5px 0px var(--special-background);
 }
 .main-nav__item {
   height: 100%;
@@ -411,6 +512,11 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
 }
 .offers__list {
   margin: 0;
@@ -431,7 +537,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 22px;
+  padding: 21px 22px;
 }
 .offers__item--materials {
   background-color: var(--special-yellow);
@@ -539,9 +645,6 @@ body {
   background: url("../img/drill.jpg");
 }
 
-.offer-slider__dot {
-  display: none;
-}
 .offer-slider__title {
   margin: 0;
   color: var(--basic-white);
@@ -554,7 +657,7 @@ body {
 .offer-slider__slogan {
   margin: 0;
   color: var(--basic-white);
-  font-size: 15px;
+  font-size: 18px;
 }
 .offer-slider__controls {
   position: absolute;
@@ -631,8 +734,8 @@ body {
   color: var(--basic-white);
   font-size: 14px;
   line-height: 18px;
+  padding: 11px 10px 9px;
   width: 192px;
-  height: 38px;
   background-color: var(--basic-red);
   transition: all 0.1s;
   border-radius: 2px;
@@ -661,6 +764,7 @@ body {
   color: var(--background-nav);
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .popular-items__list {
@@ -735,6 +839,7 @@ body {
   color: var(--old-price);
   text-decoration: line-through;
   margin-bottom: 13px;
+  padding-right: 5px;
 }
 .card-item__new-price,
 .card-item__new-price:link,
@@ -742,7 +847,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 121px;
+  width: 141px;
   height: 38px;
   text-decoration: none;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -754,15 +859,16 @@ body {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   position: relative;
-  padding-left: 5px;
+  padding-right: 5px;
+  padding: 5px 20px 5px 15px;
 }
 .card-item__new-price::after {
   content: "";
   position: absolute;
-  border: 19px solid transparent;
-  border-left: 20px solid var(--basic-red);
-  border-right: none;
-  right: -20px;
+  border: 20px solid var(--basic-white);
+  border-left-color: transparent;
+  border-right: 1px solid white;
+  right: -1px;
 }
 .button-pay,
 .button-pay:link,
@@ -895,9 +1001,6 @@ body {
   top: 0;
   margin: auto 0;
 }
-.services__dot {
-  display: none;
-}
 .services__item:not(:last-child) {
   margin-bottom: 1px;
 }
@@ -962,9 +1065,6 @@ body {
 .service__slogan--credit {
   margin-bottom: 26.5px;
 }
-.services__dot {
-  display: none;
-}
 .services__dot--delivery:checked ~ .services__list .services__name--delivery,
 .services__dot--guarantee:checked ~ .services__list .services__name--guarantee,
 .services__dot--credit:checked ~ .services__list .services__name--credit {
@@ -994,7 +1094,7 @@ body {
 .company-info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 75px;
 }
 .about {
   display: flex;
@@ -1094,6 +1194,7 @@ body {
   margin-bottom: 27px;
 }
 .footer-top__adress {
+  margin: 0;
   font-size: 18px;
   color: var(--footer-contacts);
 }
@@ -1147,6 +1248,7 @@ body {
 }
 .footer-bottom__copyright {
   line-height: 18px;
+  margin: 0;
   color: var(--basic-white);
 }
 .social {
@@ -1166,7 +1268,6 @@ body {
 .social__link:link,
 .social__link:visited {
   display: inline-block;
-  font-size: 0;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -1222,25 +1323,18 @@ body {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 1000;
+  z-index: 999;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.contact-popup-container {
-  /*display: block;*/
-}
-.map-popup-container {
-  /*display: block;*/
-}
-.order-popup-container {
-  /*display: block;*/
-}
 .contact-popup {
+  display: none;
   width: 620px;
   max-height: 430px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   margin: 0 auto;
   border-top: 7px solid var(--basic-red);
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
   top: 0;
   bottom: 0;
   right: 0;
@@ -1283,6 +1377,7 @@ body {
 }
 .contact-popup__input--question {
   height: 114px;
+  resize: none;
 }
 .contact-popup__close {
   position: absolute;
@@ -1290,7 +1385,6 @@ body {
   top: 9px;
 }
 .close-button {
-  font-size: 0;
   background-color: transparent;
   outline: none;
   border: none;
@@ -1317,6 +1411,7 @@ body {
 /*Попап карта*/
 
 .map-popup {
+  display: none;
   width: 943px;
   max-height: 449px;
   margin: auto;
@@ -1325,7 +1420,8 @@ body {
   right: 0;
   left: 0;
   margin: auto;
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
@@ -1336,9 +1432,11 @@ body {
 }
 /* Попап добавления товара*/
 .order-popup {
+  display: none;
   width: 620px;
   max-height: 282px;
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
   top: 0;
   bottom: 0;
   right: 0;
@@ -1403,3 +1501,5 @@ body {
   color: var(--basic-red);
   opacity: 0.5;
 }
+
+/*--------------------------------------------------Каталог-------------------------------------------------------------*/

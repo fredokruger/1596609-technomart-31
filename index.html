@@ -13,6 +13,7 @@
   <body class="page-body"> 
     <header class="main-header">
       <section class="header-top">
+        <h2 class="visually-hidden">Логотип компании, поиск по сайту, закладки, корзина, оформление заказа</h2>
         <div class="header-top__container container">
           <a href="" class="logo logo--header">
             <img class="logo__image" src="img/logo.svg" alt="Логотип компании Техномарт" width="108" height="18">
@@ -24,7 +25,7 @@
         <ul class="header-top__list">
           <li class="header-top__item"><a class="header-top__item-link" href="#"><svg class="header-top__item-icon" width="14" height="16"><use href="sprite.svg#icon-bookmark"></use></svg>Закладки: 0</a></li>
           <li class="header-top__item"><a class="header-top__item-link" href="#"><svg class="header-top__item-icon" width="15" height="15"><use href="sprite.svg#icon-cart"></use></svg>Корзина: 0</a></li>
-          <li class="header-top__item"><a class="header-top__item-link checkout" href="#">Оформить заказ</a></li>
+          <li class="header-top__item"><a class="header-top__item-link header-top__item-link--checkout" href="#">Оформить заказ</a></li>
         </ul>
         </div>
       </section>
@@ -39,9 +40,19 @@
           <a class="header-middle__authorization-button sign-button signin-button" href="#"><svg class="signin-button__icon" width="20" height="17"><use href="sprite.svg#icon-login"></use></svg> Войти</a>
           <a class="header-middle__authorization-button sign-button signup-button" href="#">Регистрация</a>
         </div>
+        <div class="header-middle__account" style="display: none;">
+          <div class="header-middle__profile">
+              <a class="header-middle__profile-link" href="#"><svg class="header-middle__profile-icon" width="20" height="18"><use href="../sprite.svg#icon-user"></use></svg> <span>Равшан Джамшутович</span></a>
+              <a class="header-middle__logout-link" href="#"><svg class="header-middle__logout-icon" width="20" height="17"><use href="../sprite.svg#icon-logout"></use></svg></a>
+          </div>
+          <div class="header-middle__personal">
+              <a class="header-middle__orders" href="#">Мои заказы</a>
+              <a class="header-middle__personal-area" href="#">Личный кабинет</a>
+          </div>
         </div>
       </section>
       <section class="header-bottom">
+        <h2 class="visually-hidden">Основная навигация по сайту</h2>
         <div class="header-bottom__container container">
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -91,8 +102,8 @@
               </div>
               <a class="offer-slider__catalog button" href="catalog/index.html">Открыть каталог</a>
               <div class="offer-slider__dots">
-                <input type="radio" id="dot-1" name="toggle"class="offer-slider__dot offer-slider__dot--prev" checked></input>
-                <input type="radio" id="dot-2" name="toggle" class="offer-slider__dot offer-slider__dot--next"></input>
+                <input type="radio" id="dot-1" name="toggle" class="visually-hidden offer-slider__dot offer-slider__dot--prev" checked></input>
+                <input type="radio" id="dot-2" name="toggle" class="visually-hidden offer-slider__dot offer-slider__dot--next"></input>
               <div class="offer-slider__controls">
                 <label class="offer-slider__control offer-slider__control--prev" for="dot-1"></label>
                 <label class="offer-slider__control offer-slider__control--next" for="dot-2"></label>
@@ -207,9 +218,9 @@
         </div>
         <div class="services__info">
           <div class="services__dots">
-          <input class="services__dot services__dot--delivery" type="radio" name="service-info" value="delivery" id="delivery" checked>
-          <input class="services__dot services__dot--guarantee" type="radio" name="service-info" value="guarantee" id="guarantee">
-          <input class="services__dot services__dot--credit" type="radio" name="service-info" value="credit" id="credit"> 
+          <input class="visually-hidden services__dot services__dot--delivery" type="radio" name="service-info" value="delivery" id="delivery" checked>
+          <input class="visually-hidden services__dot services__dot--guarantee" type="radio" name="service-info" value="guarantee" id="guarantee">
+          <input class="visually-hidden services__dot services__dot--credit" type="radio" name="service-info" value="credit" id="credit"> 
           <ul class="services__list">
             <li class="services__item"><label class="services__name services__name--delivery" for="delivery">Доставка</label></li>
             <li class="services__item"><label class="services__name services__name--guarantee" for="guarantee">Гарантия</label></li>
@@ -270,6 +281,7 @@
     </main>
     <footer class="main-footer">
       <section class="footer-top">
+        <h2 class="visually-hidden">Адрес, навигация, логотип компании</h2>
         <div class="container footer-top__container">
           <div class="footer-top__logo">
           <a href="" class="logo logo--footer">
@@ -295,12 +307,13 @@
       </div>
       </section>
       <section class="footer-bottom">
+        <h2 class="visually-hidden">Копирайт, социальные сети, разработчик сайта</h2>
         <div class="container footer-bottom__container">
           <p class="footer-bottom__copyright">© 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
           <ul class="footer-bottom__social social">
-            <li class="social__item"><a class="social__link social__link--vk" href="#">Вконтакте</a></li>
-            <li class="social__item"><a class="social__link social__link--fb" href="#">Фэйсбук</a></li>
-            <li class="social__item"><a class="social__link social__link--inst" href="#">Инстаграм</a></li>
+            <li class="social__item"><a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li class="social__item"><a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фэйсбук</span></a></li>
+            <li class="social__item"><a class="social__link social__link--inst" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
           </ul>
           <div class="footer-contacts">
             <p class="footer-contacts__info">Обратная связь:<br><a class="footer-contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
@@ -309,8 +322,8 @@
         </div>
       </section>
     </footer>
-    <div class="popup-container contact-popup-container">
     <section class="contact-popup">
+      <h2 class="visually-hidden">Связаться с нами</h2>
       <form class="contact-popup__form">
         <div class="contact-popup__input-container">
         <div class="contact-popup__item">
@@ -330,17 +343,15 @@
         <button class="contact-popup__button button" type="submit">Отправить</button>
         </div>
       </form>
-      <button class="contact-popup__close close-button" type="button">Закрыть</button>
+      <button class="contact-popup__close close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
-  </div>
-  <div class="popup-container map-popup-container">
     <section class="map-popup">
+      <h2 class="visually-hidden">Как нас найти</h2>
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8301744005787!2d30.31430331609816!3d59.96814048188694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bcebbd7f3%3A0xe0d833dfef898281!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTcwMjI!5e0!3m2!1sru!2sru!4v1622217120341!5m2!1sru!2sru" width="943" height="449" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      <button class="map-popup__close close-button" type="button">Закрыть</button>
+      <button class="map-popup__close close-button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
     </section>
-    </div>
-    <div class="popup-container order-popup-container">
       <section class="order-popup">
+        <h2 class="visually-hidden">Товар добавлен в корзину</h2>
       <div class="order-popup__slogan-container">
       <p class="order-popup__slogan">Товар добавлен в корзину!</p>
       </div>
@@ -348,8 +359,8 @@
           <a class="order-popup__pay-button button" href="#">Оформить заказ</a>
           <button class="order-popup__close-button button button--white" type="button">Продолжить покупки</button>
       </div>
-      <button class="order-popup__close close-button" type="button">Закрыть</button>
+      <button class="order-popup__close close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
-  </div>
+  <div class="popup-container"><!--Подложка--></div> 
   </body>
 </html>

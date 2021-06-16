@@ -3,65 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="icon" href="/favicon.ico">
-    <link rel="icon" href="/favicons/icon.svg" type="amge/svg+xml">
-    <link rel="apple-touch-icon" href="/favicons/180.png">
-    <link rel="manifest" href="/manifest.webmanifest">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="../favicons/icon.svg" type="amge/svg+xml">
+    <link rel="apple-touch-icon" href="../favicons/180.png">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="page-body">
   <header class="main-header">
-    <section class="main-header__top  header-top">
-      <div class="header-top__container">
-        <a href="" class="header-top__logo-link logo">
-          <img class="logo__image" src="/img/logo.svg" alt="Логотип компании Техномарт" width="108" height="18">
+    <section class="header-top">
+      <h2 class="visually-hidden">Логотип компании, поиск по сайту, закладки, корзина, оформление заказа</h2>
+      <div class="header-top__container container">
+        <a href="" class="logo logo--header">
+          <img class="logo__image" src="../img/logo.svg" alt="Логотип компании Техномарт" width="108" height="18">
         </a>
-        <form class="header-top__search">
-          <input class="header-top__search-input" type="search" placeholder="Поиск:" id="header-search">
-          <label class="header-top__search-label" for="header-search"><svg class="header-top__search-icon" width="17" height="17"><use href="/sprite.svg#icon-search"></use></svg></label>
-      </form>
+      <form class="search">
+          <input class="search__input" type="search" placeholder="Поиск:" id="search">
+          <label class="search__label" for="search"><svg class="search__icon" width="17" height="17"><use href="../sprite.svg#icon-search"></use></svg></label>
+      </form> 
       <ul class="header-top__list">
-        <li class="header-top__item"><a class="header-top__item-link" href="#"><svg class="header-top__item-icon" width="14" height="16"><use href="/sprite.svg#icon-bookmark"></use></svg>Закладки: 0</a></li>
-        <li class="header-top__item"><a class="header-top__item-link" href="#"><svg class="header-top__item-icon" width="15" height="15"><use href="/sprite.svg#icon-cart"></use></svg>Корзина: 0</a></li>
-        <li class="header-top__item"><a class="header-top__item-link checkout" href="#">Оформить заказ</a></li>
+        <li class="header-top__item"><a class="header-top__item-link header-top__item-link--full" href="#"><svg class="header-top__item-icon" width="14" height="16"><use href="../sprite.svg#icon-bookmark"></use></svg>Закладки: 10</a></li>
+        <li class="header-top__item"><a class="header-top__item-link header-top__item-link--full" href="#"><svg class="header-top__item-icon" width="15" height="15"><use href="../sprite.svg#icon-cart"></use></svg>Корзина: 11</a></li>
+        <li class="header-top__item"><a class="header-top__item-link header-top__item-link--checkout" href="#">Оформить заказ</a></li>
       </ul>
       </div>
     </section>
-    <section class="main-header__middle header-middle">
-      <div class="header-middle__container">
+    <section class="header-middle">
+      <div class="header-middle__container container">
       <h2 class="header-middle__title">Интернет-магазин <br>строительных материалов <br>и инструментов для ремонта</h2>
       <div class="header-middle__contacts">
         <a class="header-middle__phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
         <p class="header-middle__adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
       </div>
-          <div class="header-middle__account">
-            <div class="header-middle__profile">
-                <a class="header-middle__profile-link" href="#"><svg class="header-middle__profile-icon" width="20" height="18"><use href="/sprite.svg#icon-user"></use></svg> <span>Равшан Джамшутович</span></a>
-                <a class="header-middle__logout-link" href="#"><svg class="header-middle__logout-icon" width="20" height="17"><use href="/sprite.svg#icon-logout"></use></svg></a>
-            </div>
-            <div class="header-middle__personal">
-                <a class="header-middle__orders" href="#">Мои заказы</a>
-                <a class="header-middle__personal-area" href="#">Личный кабинет</a>
-            </div>
-          </div>
-        </section>
-        <section class="main-header__bottom header-bottom">
-          <div class="header-bottom__container">
-          <nav class="header-bottom__nav  main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Компания</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Новости</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Спецпредложения</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Доставка</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
-            </ul>
-          </nav>
-          </div>
-        </section>
-      </header>
+      <div class="header-middle__authorization" style="display: none;">
+        <a class="header-middle__authorization-button sign-button signin-button" href="#"><svg class="signin-button__icon" width="20" height="17"><use href="sprite.svg#icon-login"></use></svg> Войти</a>
+        <a class="header-middle__authorization-button sign-button signup-button" href="#">Регистрация</a>
+      </div>
+      <div class="header-middle__account">
+        <div class="account">
+            <a class="account__profile-link" href="#"><svg class="account__profile-icon" width="20" height="18"><use href="../sprite.svg#icon-user"></use></svg> <span class="account__name">Равшан Джамшутович</span></a>
+            <a class="account__logout-link" href="#"><svg class="account__logout-icon" width="20" height="17"><use href="../sprite.svg#icon-logout"></use></svg></a>
+        </div>
+        <ul class="personal">
+            <li class="personal__item"><a class="personal__link personal__link--orders" href="#">Мои заказы</a></li>
+            <li class="personal__item"><a class="personal__link personal__link--area" href="#">Личный кабинет</a></li>
+        </ul>
+      </div>
+      </div>
+    </section>
+    <section class="header-bottom">
+      <h2 class="visually-hidden">Основная навигация по сайту</h2>
+      <div class="header-bottom__container container">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Компания</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Новости</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Спецпредложения</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Доставка</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      </div>
+    </section>
+  </header>
       <main class="main-container">
           <ul class="breadcrumbs">
               <li class="breadcrumbs__catalog"><a class="breadcrumbs__catalog-link" href="#">Каталог</a></li>
@@ -277,59 +284,59 @@
           </section>
       </main> 
       <footer class="main-footer">
-        <div class="main-footer__container">
-        <section class="main-footer__top">
-          <div class="main-footer__logo logo">
-            <a class="logo__link">
-              <img class="logo__image" src="/img/logo.svg" alt="Логотип компании" width="138" height="23">
+        <section class="footer-top">
+          <h2 class="visually-hidden">Адрес, навигация, логотип компании</h2>
+          <div class="container footer-top__container">
+            <div class="footer-top__logo">
+            <a href="" class="logo logo--footer">
+              <img class="logo__image" src="../img/logo.svg" alt="Логотип компании" width="138" height="23">
             </a>
-            <p class="main-footer__adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>+7 800 555-86-28</p>
+            <p class="footer-top__adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>+7 800 555-86-28</p>
           </div>
-          <div class="main-footer__navigation">
-            <ul class="main-footer__navigation-list">
-              <li class="main-footer__navigation-item"><a class="main-footer__navigation-link" href="#">Компания</a></li>
-              <li class="main-footer__navigation-item"><a class="main-footer__navigation-link" href="#">Новости</a></li>
-              <li class="main-footer__navigation-item"><a class="main-footer__navigation-link" href="#">Каталог</a></li>
-              <li class="main-footer__navigation-item"><a class="main-footer__navigation-link" href="#">Доставка</a></li>
-              <li class="main-footer__navigation-item"><a class="main-footer__navigation-link" href="#">Контакты</a></li>
+          <div class="footer-top__navigation">
+            <ul class="footer-top__navigation-list">
+              <li class="footer-top__navigation-item"><a class="footer-top__navigation-link footer-top__navigation-link--top" href="#">Компания</a></li>
+              <li class="footer-top__navigation-item"><a class="footer-top__navigation-link footer-top__navigation-link--top" href="#">Новости</a></li>
+              <li class="footer-top__navigation-item"><a class="footer-top__navigation-link footer-top__navigation-link--top" href="#">Каталог</a></li>
+              <li class="footer-top__navigation-item"><a class="footer-top__navigation-link footer-top__navigation-link--top" href="#">Доставка</a></li>
+              <li class="footer-top__navigation-item"><a class="footer-top__navigation-link footer-top__navigation-link--top" href="#">Контакты</a></li>
             </ul>
-            <ul class="main-footer__navigation-list">
-              <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--yellow" href="#">Материалы</a></li>
-              <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--yellow" href="#">Техника</a></li>
-              <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--yellow" href="#">Инструмент</a></li>
-              <li class="main-footer__navigation-item"><a class="main-footer__navigation-link main-footer__navigation-link--yellow" href="#">Спецпредложения</a></li>
+            <ul class="footer-top__navigation-list">
+              <li class="footer-top__navigation-item"><a class="footer-top__navigation-link footer-top__navigation-link--bottom" href="#">Материалы</a></li>
+              <li class="footer-top__navigation-item"><a class="footer-top__navigation-link footer-top__navigation-link--bottom" href="#">Техника</a></li>
+              <li class="footer-top__navigation-item"><a class="footer-top__navigation-link footer-top__navigation-link--bottom" href="#">Инструмент</a></li>
+              <li class="footer-top__navigation-item"><a class="footer-top__navigation-link footer-top__navigation-link--bottom" href="#">Спецпредложения</a></li>
             </ul>
+          </div>
+        </div>
+        </section>
+        <section class="footer-bottom">
+          <h2 class="visually-hidden">Копирайт, социальные сети, разработчик сайта</h2>
+          <div class="container footer-bottom__container">
+            <p class="footer-bottom__copyright">© 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
+            <ul class="footer-bottom__social social">
+              <li class="social__item"><a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+              <li class="social__item"><a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фэйсбук</span></a></li>
+              <li class="social__item"><a class="social__link social__link--inst" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+            </ul>
+            <div class="footer-contacts">
+              <p class="footer-contacts__info">Обратная связь:<br><a class="footer-contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+              <p class="footer-contacts__info">Разработано —<br><a class="footer-contacts__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a></p>
+          </div>
           </div>
         </section>
-        <section class="main-footer__bottom">
-          <div class="main-footer__copyright">
-            <p class="main-footer__copyright-info">© 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
-          </div>
-          <div class="main-footer__social social">
-            <ul class="social__list">
-              <li class="social__item"><a class="social__link" href="#">Вконтакте</a></li>
-              <li class="social__item"><a class="social__link" href="#">Фэйсбук</a></li>
-              <li class="social__item"><a class="social__link" href="#">Инстаграм</a></li>
-            </ul>
-          </div>
-            <div class="main-footer__contact">
-              <p class="main-footer__contact-slogan">Обратная связь:</p>
-              <a class="main-footer__contact-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-            <div class="main-footer__developer">
-              <p class="main-footer__developer-slogan">Разработано —</p>
-              <a class="main-footer__developer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-            </div>
-        </section>
-      </div>
       </footer>
       <section class="order-popup">
-          <p class="order-popup__slogan">Товар добавлен в корзину!</p>
-          <div class="order-popup__buttons">
-              <a class="order-popup__pay-button button" href="#">Оформить заказ</a>
-              <button class="order-popup__close-button button button--white" type="button">Продолжить покупки</button>
-          </div>
-          <button class="order-popup__close close-button" type="button">Закрыть</button>
-      </section>
+        <h2 class="visually-hidden">Товар добавлен в корзину</h2>
+      <div class="order-popup__slogan-container">
+      <p class="order-popup__slogan">Товар добавлен в корзину!</p>
+      </div>
+      <div class="order-popup__buttons">
+          <a class="order-popup__pay-button button" href="#">Оформить заказ</a>
+          <button class="order-popup__close-button button button--white" type="button">Продолжить покупки</button>
+      </div>
+      <button class="order-popup__close close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+  <div class="popup-container"><!--Подложка--></div>
 </body>
 </html>
