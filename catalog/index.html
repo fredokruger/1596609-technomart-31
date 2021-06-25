@@ -75,7 +75,7 @@
               <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#"><svg class="breadcrumbs__home-icon" width="14" height="12"><use href="../sprite.svg#home-breadcrumbs"></use></svg><span class="visually-hidden">На главную</span></a></li>
               <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
               <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Инструмент</a></li>
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link">Перфораторы</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current">Перфораторы</a></li>
           </ul>
           <h2 class="catalog-main-title">Перфораторы</h2>
           <section class="catalog-container">
@@ -97,9 +97,20 @@
               <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="filter__group filter__group--price">
                   <legend class="filter__title filter__title--price">Цена:</legend>
-                  <input type="range" min="1000" max="50000" step="any">
-                  <input type="number" name="min-price" min="1000" max="50000">
-                  <input type="number" name="max-price" min="1000" max="50000">
+                  <div class="filter-price">
+                    <div class="filter-price__range-controls">
+                      <div class="filter-price__scale">
+                        <div class="filter-price__bar"></div>
+                        <div class="filter-price__toggle filter-price__toggle--min"><img src="../img/icons/filter-button.svg" width="20" height="22"></div>
+                        <div class="filter-price__toggle filter-price__toggle--max"><img src="../img/icons/filter-button.svg" width="20" height="22"></div>
+                      </div>
+                    </div>
+                    <div class="filter-price__price-controls">
+                      <label class="filter-price__min-price"><input class="filter-price__input-price" type="number" name="min-price" value="0"></label>
+                      <span class="dash">—</span>
+                      <label class="filter-price__max-price"><input class="filter-price__input-price" type="number" name="max-price" value="50000"></label>  
+                    </div>
+                  </div>
               </fieldset>
               <fieldset class="filter__group filter__group--maker">
                   <legend class="filter__title filter__title--maker">Производители:</legend>
