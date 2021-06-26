@@ -330,6 +330,7 @@ body {
   background: url("../img/icons/phone.svg") no-repeat center;
 }
 .header-middle__adress {
+  max-width: 270px;
   font-size: 14px;
   margin: 0;
   color: var(--background-nav);
@@ -343,6 +344,8 @@ body {
 .sign-button:link,
 .sign-button:visited {
   display: flex;
+  max-width: 150px;
+  text-overflow: ellipsis;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -362,6 +365,8 @@ body {
   padding: 12px 24px;
 }
 .signin-button__icon {
+  min-width: 20px;
+  height: 17px;
   fill: var(--basic-greylight);
   margin-right: 6px;
 }
@@ -382,16 +387,23 @@ body {
   margin-bottom: 1px;
 }
 .account__profile-icon {
-  margin-right: 21px;
+  min-width: 20px;
+  height: 18px;
+  margin-right: 18px;
   fill: var(--basic-greylight);
 }
 .account__logout-icon {
+  min-width: 20px;
+  height: 17px;
   fill: var(--basic-greylight);
 }
 .account__profile-link,
 .account__profile-link:link,
 .account__profile-link:visited {
   display: flex;
+  align-items: center;
+  max-width: 300px;
+  word-break: break-all;
   padding: 12px 10px 12px 15px;
   color: var(--basic-black);
   text-decoration: none;
@@ -431,6 +443,7 @@ body {
   padding: 0;
   list-style: none;
   margin-bottom: -5px;
+  flex-wrap: wrap;
 }
 .personal__link,
 .personal__link:link,
@@ -820,6 +833,7 @@ body {
   font-weight: 700;
   text-align: center;
   margin-bottom: 7px;
+  word-break: break-all;
 }
 .card-item__image-container {
   order: -1;
@@ -1204,6 +1218,7 @@ body {
   margin-bottom: 27px;
 }
 .footer-top__adress {
+  max-width: 340px;
   margin: 0;
   font-size: 18px;
   color: var(--footer-contacts);
@@ -1258,6 +1273,7 @@ body {
   position: relative;
 }
 .footer-bottom__copyright {
+  max-width: 300px;
   line-height: 18px;
   margin: 0;
   color: var(--basic-white);
@@ -1541,6 +1557,11 @@ body {
 .breadcrumbs__link:link,
 .breadcrumbs__link:visited {
   display: inline-block;
+  vertical-align: middle;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   text-decoration: none;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -1669,13 +1690,14 @@ body {
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
+  word-break: break-all;
 }
 .filter__name--maker::before {
   content: "";
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 23px;
+  min-width: 23px;
   height: 23px;
   -webkit-mask: url("../img/icons/checkbox-off.svg") 50% 50% / contain no-repeat;
   mask: url("../img/icons/checkbox-off.svg") 50% 50% / contain no-repeat;
@@ -1685,7 +1707,7 @@ body {
 }
 .filter__name--mains::before {
   content: "";
-  width: 25px;
+  min-width: 25px;
   height: 25px;
   -webkit-mask: url("../img/icons/radio-off.svg") 50% 50% / contain no-repeat;
   mask: url("../img/icons/radio-off.svg") 50% 50% / contain no-repeat;
@@ -1705,7 +1727,7 @@ body {
   opacity: 0.3;
 }
 .filter__check--maker:checked ~ .filter__name--maker::before {
-  width: 27px;
+  min-width: 27px;
   margin-right: 8px;
   -webkit-mask: url("../img/icons/checkbox-on.svg") 50% 50% / contain no-repeat;
   mask: url("../img/icons/checkbox-on.svg") 50% 50% / contain no-repeat;
@@ -1728,7 +1750,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  background-repeat: 2px;
+  border-radius: 2px;
 }
 .filter-button:hover {
   cursor: pointer;
