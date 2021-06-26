@@ -290,6 +290,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
+  flex-wrap: wrap;
 }
 /*Заголовок хэдэра*/
 .header-middle__title {
@@ -303,9 +304,7 @@ body {
 /*Контакты хэдера*/
 .header-middle__contacts {
   text-align: center;
-  position: absolute;
-  left: calc(50% - 12px);
-  transform: translate(-50%);
+  transform: translate(10px);
 }
 .header-middle__phone-number,
 .header-middle__phone-number:link,
@@ -610,7 +609,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 135px;
-  height: 38px;
+  padding: 10px;
   text-decoration: none;
   color: var(--basic-white);
   background-color: rgba(255, 255, 255, 0.3);
@@ -618,6 +617,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   transition: all 0.1s;
+  text-align: center;
 }
 .offers__link:hover {
   background-color: rgba(197, 197, 197, 0.3);
@@ -752,8 +752,8 @@ body {
   background-color: var(--error);
 }
 /* Популярные товары*/
-.popular {
-  margin-bottom: 70px;
+.popular-items {
+  margin-bottom: 50px;
 }
 .popular__header {
   padding: 25px 14px 26px 28px;
@@ -773,16 +773,16 @@ body {
 }
 .popular-items__list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  margin-right: -20px;
 }
 .popular-items__item {
   display: flex;
-}
-.popular-items__item:not(:last-child) {
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 .card-item {
   width: 220px;
@@ -852,7 +852,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 141px;
-  height: 38px;
   text-decoration: none;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -863,8 +862,7 @@ body {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   position: relative;
-  padding-right: 5px;
-  padding: 5px 20px 5px 15px;
+  padding: 10px 20px 10px 15px;
   margin-top: auto;
 }
 .card-item__new-price::after {
@@ -881,7 +879,6 @@ body {
   display: flex;
   align-items: center;
   width: 135px;
-  height: 38px;
   text-decoration: none;
   font-size: 14px;
   line-height: 18px;
@@ -890,8 +887,7 @@ body {
   background-color: var(--basic-green);
   border-radius: 2px;
   box-shadow: inset 0px -3px 0px var(--shadow-green);
-  padding-left: 30px;
-  padding-right: 40px;
+  padding: 10px 40px 10px 30px;
   transition: all 0.1s;
 }
 .button-pay:hover {
@@ -916,7 +912,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 135px;
-  height: 38px;
+  padding: 7px;
   text-decoration: none;
   font-size: 14px;
   line-height: 18px;
@@ -934,6 +930,9 @@ body {
   opacity: 0.5;
 }
 /*Популярные производители*/
+.popular-manufacturers {
+  margin-bottom: 70px;
+}
 .popular-manufacturers__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -959,6 +958,9 @@ body {
 }
 .popular-manufacturers__link:active {
   opacity: 0.5;
+}
+.popular-manufacturers__image {
+  object-fit: contain;
 }
 /* Сервисы*/
 .services {
@@ -1057,6 +1059,7 @@ body {
   background-position: 100% 0;
 }
 .service__title {
+  max-width: 300px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1064,6 +1067,7 @@ body {
   margin: 0 0 30px;
 }
 .service__slogan {
+  max-width: 350px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   margin: 0;
@@ -1105,6 +1109,7 @@ body {
 .about {
   display: flex;
   flex-direction: column;
+  max-width: 50%;
 }
 .about__title {
   font-size: 30px;
@@ -1142,7 +1147,6 @@ body {
   margin-bottom: 12px;
 }
 .about .about__button {
-  /*Без вложенности не знаю, как переопределить лучше*/
   width: 220px;
 }
 .contacts {
@@ -1213,6 +1217,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap-reverse;
 }
 .footer-top__navigation-list:not(:last-child) {
   margin-bottom: 34px;
@@ -1518,6 +1523,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px;
 }
 .breadcrumbs__item:not(:last-child)::after {
@@ -1569,12 +1575,14 @@ body {
 .catalog-container {
   display: grid;
   grid-template-columns: 220px 1fr;
-  column-gap: 20px;
+  gap: 28px 20px;
   margin-bottom: 59px;
+}
+.catalog__items {
+  margin-right: -20px;
 }
 .catalog__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
@@ -1584,9 +1592,11 @@ body {
 .catalog__item {
   display: flex;
   margin-bottom: 18px;
+  margin-right: 20px;
 }
 .catalog__pages {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1600,7 +1610,6 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 38px;
   padding: 10px 18px;
   background-color: var(--catalog-filter);
   border-radius: 3px;
@@ -1714,7 +1723,6 @@ body {
   background-color: var(--basic-white);
   color: var(--basic-black);
   width: 220px;
-  height: 38px;
   padding: 10px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -1732,17 +1740,16 @@ body {
 /*Сортировка*/
 .sorting {
   width: 100%;
-  height: 38px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--catalog-filter);
-  margin-bottom: 28px;
   padding: 10px 17px 10px 20px;
   border-radius: 3px;
 }
 .sorting__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   list-style: none;
@@ -1761,6 +1768,7 @@ body {
   flex-grow: 1;
 }
 .sorting__button {
+  display: flex;
   background-color: transparent;
   border: none;
   border-bottom: 1px dotted var(--basic-red);
@@ -1887,15 +1895,16 @@ body {
   width: 70%;
   background-color: var(--basic-green);
 }
-.filter-price__toggle {
+.filter-price__handle {
   position: absolute;
-  top: -9px;
   cursor: pointer;
+  display: flex;
+  transform: translate(0, -50%);
 }
-.filter-price__toggle--min {
+.filter-price__handle--min {
   left: 0;
 }
-.filter-price__toggle--max {
+.filter-price__handle--max {
   left: 70%;
 }
 .filter-price__price-controls {
@@ -1916,7 +1925,7 @@ body {
   outline: none;
   background-color: var(--catalog-filter);
   width: 95px;
-  height: 38px;
+  padding: 10px;
   text-align: center;
   border-radius: 3px;
 }
