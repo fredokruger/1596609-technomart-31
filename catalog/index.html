@@ -15,12 +15,12 @@
     <section class="header-top">
       <h2 class="visually-hidden">Логотип компании, поиск по сайту, закладки, корзина, оформление заказа</h2>
       <div class="header-top__container container">
-        <a href="" class="logo logo--header">
+        <a href="../" class="logo logo--header">
           <img class="logo__image" src="../img/logo.svg" alt="Логотип компании Техномарт" width="108" height="18">
         </a>
       <form class="search">
           <input class="search__input" type="search" placeholder="Поиск:" id="search">
-          <label class="search__label" for="search"><svg class="search__icon" width="17" height="17"><use href="../sprite.svg#icon-search"></use></svg></label>
+          <label class="search__label" for="search"><span class="visually-hidden">Поиск по сайту</span><svg class="search__icon" width="17" height="17"><use href="../sprite.svg#icon-search"></use></svg></label>
       </form> 
       <ul class="header-top__list">
         <li class="header-top__item"><a class="header-top__item-link header-top__item-link--full" href="#"><svg class="header-top__item-icon" width="14" height="16"><use href="../sprite.svg#icon-bookmark"></use></svg>Закладки: 10</a></li>
@@ -57,7 +57,7 @@
       <div class="header-bottom__container container">
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="../">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Компания</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Новости</a></li>
@@ -106,9 +106,9 @@
                       </div>
                     </div>
                     <div class="filter-price__price-controls">
-                      <label class="filter-price__min-price"><input class="filter-price__input-price" type="number" name="min-price" value="0"></label>
+                      <label class="filter-price__min-price"><span class="visually-hidden">Минимальная цена</span><input class="filter-price__input-price" type="number" name="min-price" value="0"></label>
                       <span class="dash">—</span>
-                      <label class="filter-price__max-price"><input class="filter-price__input-price" type="number" name="max-price" value="50000"></label>  
+                      <label class="filter-price__max-price"><span class="visually-hidden">Максимальная цена</span><input class="filter-price__input-price" type="number" name="max-price" value="50000"></label>  
                     </div>
                   </div>
               </fieldset>
@@ -306,7 +306,7 @@
           <h2 class="visually-hidden">Адрес, навигация, логотип компании</h2>
           <div class="container footer-top__container">
             <div class="footer-top__logo">
-            <a href="" class="logo logo--footer">
+            <a href="../" class="logo logo--footer">
               <img class="logo__image" src="../img/logo.svg" alt="Логотип компании" width="138" height="23">
             </a>
             <p class="footer-top__adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>+7 800 555-86-28</p>
