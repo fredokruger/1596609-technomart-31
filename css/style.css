@@ -858,6 +858,10 @@ body {
 .card-item__buttons {
   display: none;
 }
+.card-item:focus {
+  outline: none;
+}
+.card-item:focus-within .card-item__buttons,
 .card-item:hover .card-item__buttons {
   order: -1;
   width: 100%;
@@ -868,6 +872,7 @@ body {
   align-items: center;
   margin-bottom: 8px;
 }
+.card-item:focus-within .card-item__image-container,
 .card-item:hover .card-item__image-container {
   display: none;
 }
