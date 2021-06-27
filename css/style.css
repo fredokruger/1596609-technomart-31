@@ -859,7 +859,7 @@ body {
   display: none;
 }
 .card-item:focus {
-  outline: none;
+  outline: 3px solid var(--success);
 }
 .card-item:focus-within .card-item__buttons,
 .card-item:hover .card-item__buttons {
@@ -1568,7 +1568,6 @@ body {
 }
 .order-popup__close-button {
   border: none;
-  outline: none;
 }
 .button--white,
 .button--white:link,
