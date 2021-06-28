@@ -1768,9 +1768,6 @@ body {
 .filter__name--maker::before {
   content: "";
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 23px;
   height: 23px;
   -webkit-mask: url("../img/icons/checkbox-off.svg") 50% 50% / contain no-repeat;
@@ -1791,8 +1788,8 @@ body {
   transition: all 0.1s;
 }
 .filter__check--maker:checked ~ .filter__name--maker::before {
-  width: 26.16px;
-  margin-right: 8.84px;
+  width: 27px;
+  margin-right: 8px;
   -webkit-mask: url("../img/icons/checkbox-on.svg") 50% 50% / contain no-repeat;
   mask: url("../img/icons/checkbox-on.svg") 50% 50% / contain no-repeat;
 }
