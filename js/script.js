@@ -1,35 +1,19 @@
-var backgroundPopup = document.querySelector('.popup-container'); //Подложка
+let backgroundPopup = document.querySelector('.popup-container'); //Подложка
 //Попап добавления товара в корзину
-var payButtons = document.querySelectorAll('.button-pay');
-var orderPopup = document.querySelector('.order-popup');
+let payButtons = document.querySelectorAll('.button-pay');
+let orderPopup = document.querySelector('.order-popup');
 for (i=0;i<payButtons.length;i++) {
-var payButton = payButtons[i];
+let payButton = payButtons[i];
 payButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     backgroundPopup.classList.add('popup-container--visible');
     orderPopup.classList.add('order-popup--visible');
 });
 }
-//Попап карты
-var mapButton = document.querySelector('.contacts__map-button');
-var mapPopup = document.querySelector('.map-popup');
-mapButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    backgroundPopup.classList.add('popup-container--visible');
-    mapPopup.classList.add('map-popup--visible');
-});
-//Попап обратной связи
-var contactButton = document.querySelector('.contacts__button');
-var contactPopup = document.querySelector('.contact-popup');
-contactButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    backgroundPopup.classList.add('popup-container--visible');
-    contactPopup.classList.add('contact-popup--visible');
-});
 //Закрытие попапа
-var closeButtons = document.querySelectorAll('.close-popup');
-for (let i=0;i<closeButtons.length;i++) {
-    var closeButton = closeButtons[i]; 
+let closeButtons = document.querySelectorAll('.close-popup');
+for (let i=0; i<closeButtons.length; i++) {
+    let closeButton = closeButtons[i]; 
     closeButton.addEventListener('click', function () {
         backgroundPopup.classList.remove('popup-container--visible');
         orderPopup.classList.remove('order-popup--visible');
@@ -45,6 +29,23 @@ document.addEventListener('keydown', function (evt) {
         contactPopup.classList.remove('contact-popup--visible');
     }
   });
+//Попап обратной связи
+let contactButton = document.querySelector('.contacts__button');
+let contactPopup = document.querySelector('.contact-popup');
+contactButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    backgroundPopup.classList.add('popup-container--visible');
+    contactPopup.classList.add('contact-popup--visible');
+});
+//Попап карты
+let mapButton = document.querySelector('.contacts__map-button');
+let mapPopup = document.querySelector('.map-popup');
+mapButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    backgroundPopup.classList.add('popup-container--visible');
+    mapPopup.classList.add('map-popup--visible');
+});
+
 
 //переключение тоглами на первом слайдере
 let toggleSliderButtons = document.querySelectorAll('.offer-slider__control');

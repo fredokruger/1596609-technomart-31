@@ -1767,10 +1767,8 @@ body {
 }
 .filter__name--maker::before {
   content: "";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 23px;
+  flex-shrink: 0;
+  width: 23px;
   height: 23px;
   -webkit-mask: url("../img/icons/checkbox-off.svg") 50% 50% / contain no-repeat;
   mask: url("../img/icons/checkbox-off.svg") 50% 50% / contain no-repeat;
@@ -1780,7 +1778,8 @@ body {
 }
 .filter__name--mains::before {
   content: "";
-  min-width: 25px;
+  flex-shrink: 0;
+  width: 25px;
   height: 25px;
   -webkit-mask: url("../img/icons/radio-off.svg") 50% 50% / contain no-repeat;
   mask: url("../img/icons/radio-off.svg") 50% 50% / contain no-repeat;
@@ -1789,8 +1788,8 @@ body {
   transition: all 0.1s;
 }
 .filter__check--maker:checked ~ .filter__name--maker::before {
-  min-width: 27px;
-  margin-right: 8px;
+  width: 26.17px;
+  margin-right: 8.83px;
   -webkit-mask: url("../img/icons/checkbox-on.svg") 50% 50% / contain no-repeat;
   mask: url("../img/icons/checkbox-on.svg") 50% 50% / contain no-repeat;
 }
