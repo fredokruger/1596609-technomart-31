@@ -685,17 +685,18 @@ body {
   position: relative;
 }
 .offer-slider__item {
+  display: none;
   width: 620px;
   height: 266px;
   padding: 23px;
 }
-.offer-slider__item--hidden {
-  display: none;
+.offer-slider__item--visible {
+  display: block;
 }
-.offer-slider__perforator {
+.offer-slider__item--perforator {
   background: url("../img/perforator.jpg");
 }
-.offer-slider__drill {
+.offer-slider__item--drill {
   background: url("../img/drill.jpg");
 }
 
@@ -1409,6 +1410,9 @@ body {
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.3);
 }
+.popup-container--visible {
+  display: block;
+}
 .contact-popup {
   display: none;
   width: 620px;
@@ -1423,6 +1427,9 @@ body {
   right: 0;
   left: 0;
   margin: auto;
+}
+.contact-popup--visible {
+  display: block;
 }
 .contact-popup__input-container {
   padding: 39px 80px 37px;
@@ -1509,6 +1516,9 @@ body {
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
+.map-popup--visible {
+  display: block;
+}
 .map-popup__close {
   position: absolute;
   top: 5px;
@@ -1528,6 +1538,9 @@ body {
   margin: auto;
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+.order-popup--visible {
+  display: block;
 }
 .order-popup__slogan-container {
   padding-top: 55px;
@@ -1566,12 +1579,10 @@ body {
 .order-popup__pay-button {
   margin-right: 10px;
 }
-.order-popup__close-button {
-  border: none;
-}
 .button--white,
 .button--white:link,
 .button--white:visited {
+  border: none;
   background-color: var(--basic-white);
   color: var(--basic-black);
 }

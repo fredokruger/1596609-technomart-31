@@ -96,12 +96,12 @@
           <li class="offers__item offer-slider">
             <article class="offer-slider__container">
               <div class="offer-slider__slides">
-              <div class="offer-slider__item offer-slider__perforator">
+              <div class="offer-slider__item offer-slider__item--visible offer-slider__item--perforator">
                 <h3 class="offer-slider__title">Перфораторы</h3>
                 <p class="offer-slider__slogan">Настоящие мужские игрушки</p>
                 <a class="offer-slider__catalog button" href="catalog/index.html">Открыть каталог</a>
               </div>
-              <div class="offer-slider__item offer-slider__item--hidden offer-slider__drill">
+              <div class="offer-slider__item offer-slider__item--drill">
                 <h3 class="offer-slider__title">Дрели</h3>
                 <p class="offer-slider__slogan">Соседям на радость!</p>
                 <a class="offer-slider__catalog button" href="catalog/index.html">Открыть каталог</a>
@@ -111,8 +111,8 @@
                 <button class="offer-slider__arrow offer-slider__arrow--next" type="button"><svg width="22" height="40" class="offer-slider__arrow-icon"><use href="sprite.svg#icon-arrow-right"></use></svg></button>
               </div>
               <div class="offer-slider__controls">
-                <button class="offer-slider__control offer-slider__control--active offer-slider__control--prev"><span class="visually-hidden">Первый слайд</span></button>
-                <button class="offer-slider__control offer-slider__control--next"><span class="visually-hidden">Второй слайд</span></button>
+                <button class="offer-slider__control offer-slider__control--active offer-slider__control--first"><span class="visually-hidden">Первый слайд</span></button>
+                <button class="offer-slider__control offer-slider__control--second"><span class="visually-hidden">Второй слайд</span></button>
               </div>
               </div>
             </article>
@@ -327,12 +327,12 @@
         <button class="contact-popup__button button" type="submit">Отправить</button>
         </div>
       </form>
-      <button class="contact-popup__close close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <button class="contact-popup__close close-button close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     <section class="map-popup">
       <h2 class="visually-hidden">Как нас найти</h2>
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8301744005787!2d30.31430331609816!3d59.96814048188694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bcebbd7f3%3A0xe0d833dfef898281!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTcwMjI!5e0!3m2!1sru!2sru!4v1622217120341!5m2!1sru!2sru" width="943" height="449" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      <button class="map-popup__close close-button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+      <button class="map-popup__close close-button close-popup" type="button"><span class="visually-hidden">Закрыть окно</span></button>
     </section>
       <section class="order-popup">
         <h2 class="visually-hidden">Товар добавлен в корзину</h2>
@@ -341,11 +341,12 @@
       </div>
       <div class="order-popup__buttons">
           <a class="order-popup__pay-button button" href="#">Оформить заказ</a>
-          <button class="order-popup__close-button button button--white" type="button">Продолжить покупки</button>
+          <button class="order-popup__close-button button button--white close-popup" type="button">Продолжить покупки</button>
       </div>
-      <button class="order-popup__close close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <button class="order-popup__close close-button close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
   <div class="popup-container"><!--Подложка--></div> 
   <script src="js/focus-visible.min.js"></script>
+  <script src="js/script.js"></script>
   </body>
 </html>
