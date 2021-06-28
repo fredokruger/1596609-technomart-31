@@ -28,7 +28,7 @@ contactButton.addEventListener('click', function (evt) {
 });
 //Закрытие попапа
 var closeButtons = document.querySelectorAll('.close-popup');
-for (leti=0;i<closeButtons.length;i++) {
+for (let i=0;i<closeButtons.length;i++) {
     var closeButton = closeButtons[i]; 
     closeButton.addEventListener('click', function () {
         backgroundPopup.classList.remove('popup-container--visible');
@@ -37,6 +37,14 @@ for (leti=0;i<closeButtons.length;i++) {
         contactPopup.classList.remove('contact-popup--visible');
     });
 }
+document.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+        backgroundPopup.classList.remove('popup-container--visible');
+        orderPopup.classList.remove('order-popup--visible');
+        mapPopup.classList.remove('map-popup--visible');
+        contactPopup.classList.remove('contact-popup--visible');
+    }
+  });
 
 //переключение тоглами на первом слайдере
 let toggleSliderButtons = document.querySelectorAll('.offer-slider__control');
