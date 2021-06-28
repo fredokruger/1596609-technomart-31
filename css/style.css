@@ -1777,7 +1777,7 @@ body {
   mask: url("../img/icons/checkbox-off.svg") 50% 50% / contain no-repeat;
   background-color: var(--basic-greylight);
   margin-right: 12px;
-  transition: all 0.1s;
+  transition: background-color 0.1s;
 }
 .filter__name--mains::before {
   content: "";
