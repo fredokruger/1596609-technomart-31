@@ -37,26 +37,18 @@ for (leti=0;i<closeButtons.length;i++) {
         contactPopup.classList.remove('contact-popup--visible');
     });
 }
-document.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 27) {
-        backgroundPopup.classList.remove('popup-container--visible');
-        orderPopup.classList.remove('order-popup--visible');
-        mapPopup.classList.remove('map-popup--visible');
-        contactPopup.classList.remove('contact-popup--visible');
-    }
-  });
 
 //переключение тоглами на первом слайдере
-var toggleSliderButtons = document.querySelectorAll('.offer-slider__control');
-var offerSliderPages = document.querySelectorAll('.offer-slider__item');
+let toggleSliderButtons = document.querySelectorAll('.offer-slider__control');
+let offerSliderPages = document.querySelectorAll('.offer-slider__item');
 let currentSliderNumber=0;
 for (let i=0; i<toggleSliderButtons.length; i++) {
     toggleSliderButtons[i].addEventListener('click', function () {
-    offerSliderPages[currentSliderNumber].classList.toggle('offer-slider__item--visible'); 
-    toggleSliderButtons[currentSliderNumber].classList.toggle('offer-slider__control--active');
-    offerSliderPages[i].classList.toggle('offer-slider__item--visible'); 
-    toggleSliderButtons[i].classList.toggle('offer-slider__control--active');
-    currentSliderNumber=i; 
+        offerSliderPages[currentSliderNumber].classList.toggle('offer-slider__item--visible'); 
+        toggleSliderButtons[currentSliderNumber].classList.toggle('offer-slider__control--active');
+        offerSliderPages[i].classList.toggle('offer-slider__item--visible'); 
+        toggleSliderButtons[i].classList.toggle('offer-slider__control--active');
+        currentSliderNumber=i; 
     });
     
 }
