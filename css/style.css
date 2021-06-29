@@ -1115,8 +1115,11 @@ body {
   outline: 3px solid var(--success);
   outline-offset: -2px;
 }
-.service--hidden {
+.service {
   display: none;
+}
+.service--visible {
+  display: block;
 }
 .service--delivery {
   background-image: url("../img/delivery.png");
