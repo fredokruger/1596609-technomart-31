@@ -1409,6 +1409,7 @@ body {
 .page-overflow {
   overflow: hidden;
   position: relative;
+  height: 100%;
 }
 .popup-container {
   display: none;
