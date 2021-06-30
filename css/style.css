@@ -1404,20 +1404,23 @@ body {
 .footer-contacts__link:focus {
   outline: 3px solid var(--success);
 }
+
 /*Попап форма*/
+.page-overflow {
+  overflow: hidden;
+}
 .popup-container {
   display: none;
   width: 100vw;
   height: 100vh;
   position: fixed;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .popup-container--visible {
   display: block;
 }
 .contact-popup {
-  display: none;
   width: 620px;
   max-height: 430px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
@@ -1430,9 +1433,6 @@ body {
   right: 0;
   left: 0;
   margin: auto;
-}
-.contact-popup--visible {
-  display: block;
 }
 .contact-popup__input-container {
   padding: 39px 80px 37px;
@@ -1505,7 +1505,6 @@ body {
 /*Попап карта*/
 
 .map-popup {
-  display: none;
   width: 943px;
   max-height: 449px;
   margin: auto;
@@ -1519,9 +1518,6 @@ body {
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
-.map-popup--visible {
-  display: block;
-}
 .map-popup__close {
   position: absolute;
   top: 5px;
@@ -1529,7 +1525,6 @@ body {
 }
 /* Попап добавления товара*/
 .order-popup {
-  display: none;
   width: 620px;
   max-height: 282px;
   position: fixed;
@@ -1542,9 +1537,7 @@ body {
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
-.order-popup--visible {
-  display: block;
-}
+
 .order-popup__slogan-container {
   padding-top: 55px;
   padding-bottom: 49px;
@@ -1598,7 +1591,25 @@ body {
   color: var(--basic-red);
   opacity: 0.5;
 }
-
+/*Общее для попапов*/
+.popup {
+  display: none;
+}
+@keyframes popup-visible {
+  from {
+    transform: translate(0, -100px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.popup-visible {
+  display: block;
+  animation-name: popup-visible;
+  animation-duration: 0.1s;
+}
 /*--------------------------------------------------Каталог-------------------------------------------------------------*/
 .catalog-header {
   margin-bottom: 21px;
