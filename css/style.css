@@ -1407,6 +1407,7 @@ body {
 
 /*Попап форма*/
 .page-overflow {
+  height: 100%;
   overflow: hidden;
 }
 .popup-container {
