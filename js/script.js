@@ -38,9 +38,6 @@ for (let i=0; i<closeButtons.length; i++) {
 }
 document.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
-        orderPopup.classList.remove('order-popup--visible');
-        mapPopup.classList.remove('map-popup--visible');
-        contactPopup.classList.remove('contact-popup--visible');
         popupOpenClose(false);
     }
   });
