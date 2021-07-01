@@ -99,9 +99,7 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
-::-webkit-scrollbar {
-  width: 0;
-}
+
 body {
   min-width: 960px;
   height: 100%;
@@ -1410,7 +1408,7 @@ body {
 
 /*Попап форма*/
 .page-overflow {
-  overflow: hidden;
+  overflow: hidden scroll;
   position: fixed;
   left: 0;
   right: 0;
