@@ -4,8 +4,8 @@ let popupOpenClose= function(isClose, selectorName) {  //Функция откр
     if (isClose) { //если попап закрыт
     let scrollPosition = window.pageYOffset; //найти текущую позицию на странице
     body.classList.add('page-overflow'); //запрет на скролл страницы
-    body.setAttribute('data-body-scroll-fix', scrollPosition); // Cтавим атрибут со значением прокрутки
-    body.style.top = '-' + scrollPosition + 'px'; //сохранить текущее местоположение при открытом попапе для боди 
+    body.setAttribute('data-body-scroll-fix', scrollPosition); //Cохранить текущее местоположение при открытом попапе для боди
+    body.style.top = '-' + scrollPosition + 'px'; // добавить положение со значением прокрутки 
     selectorName.classList.add('popup-visible'); //сделать попап видимым
     containerPopup.classList.add('popup-container--visible'); //добавить затемнение
     } else { //если попап открыт
