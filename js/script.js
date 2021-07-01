@@ -1,18 +1,21 @@
 let body = document.querySelector('.page-body');
-let html = document.querySelector('.page-html'); 
 let containerPopup = document.querySelector('.popup-container'); 
 let popupOpenClose= function(isClose, selectorName) {  //Функция открытия и закрытия попапов
-    if (isClose) { 
-    selectorName.classList.add('popup-visible');
-    containerPopup.classList.add('popup-container--visible');
-    body.classList.add('page-overflow');
-    html.classList.add('page-overflow');
-    } else {
-    let openPopup =document.querySelector('.popup-visible');
-    containerPopup.classList.remove('popup-container--visible');
-    body.classList.remove('page-overflow');
-    html.classList.remove('page-overflow');
-    openPopup.classList.remove('popup-visible');
+    if (isClose) { //если попап закрыт
+    let scrollPosition = window.pageYOffset; //найти текущую позицию на странице
+    body.classList.add('page-overflow'); //запрет на скролл страницы
+    body.setAttribute('data-body-scroll-fix', scrollPosition); // Cтавим атрибут со значением прокрутки
+    body.style.top = '-' + scrollPosition + 'px'; //сохранить текущее местоположение при открытом попапе для боди 
+    selectorName.classList.add('popup-visible'); //сделать попап видимым
+    containerPopup.classList.add('popup-container--visible'); //добавить затемнение
+    } else { //если попап открыт
+    let scrollPosition = body.getAttribute('data-body-scroll-fix'); //получить текущее положение на странице
+    let openPopup =document.querySelector('.popup-visible'); //найти текущий открытый попап
+    openPopup.classList.remove('popup-visible'); //скрыть попап
+    containerPopup.classList.remove('popup-container--visible'); //убрать затемнение
+    body.classList.remove('page-overflow'); //разрешить скролл
+    body.style.top =''; //расфиксировать текущее положение боди
+    window.scroll(0, scrollPosition); //скролл страницы до нужного значения
 };
 } 
 //Попап добавления товара в корзину
