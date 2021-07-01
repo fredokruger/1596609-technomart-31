@@ -99,6 +99,9 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 body {
   min-width: 960px;
   height: 100%;
