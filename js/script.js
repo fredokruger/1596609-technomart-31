@@ -29,18 +29,22 @@ payButton.addEventListener('click', function (evt) {
 });
 }
 //Закрытие попапа
-let closeButtons = document.querySelectorAll('.close-popup');
+let closeButtons = document.querySelectorAll('.close-popup'); //на кнопку
 for (let i=0; i<closeButtons.length; i++) {
     let closeButton = closeButtons[i]; 
     closeButton.addEventListener('click', function () {
         popupOpenClose(false);
     });
 }
-document.addEventListener('keydown', function (evt) {
+document.addEventListener('keydown', function (evt) { //на клавишу
     if (evt.keyCode === 27) {
         popupOpenClose(false);
     }
   });
+  containerPopup.addEventListener('click', function() {
+    popupOpenClose(false); 
+  });
+
 //Попап обратной связи
 let contactButton = document.querySelector('.contacts__button');
 let contactPopup = document.querySelector('.contact-popup');
