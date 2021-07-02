@@ -9,6 +9,9 @@
     <link rel="manifest" href="../manifest.webmanifest">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/jquery-3.6.0.min.js"></script>
+    <script defer src="../js/jquery-ui.min.js"></script>
+    <script defer src="../js/filterprice.js"></script>
 </head>
 <body class="page-body">
   <header class="catalog-header">
@@ -95,7 +98,7 @@
               <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="filter__group filter__group--price">
                   <legend class="filter__title filter__title--price">Цена:</legend>
-                  <div class="filter-price">
+                  <!--<div class="filter-price">
                     <div class="filter-price__range-controls">
                       <div class="filter-price__scale">
                         <div class="filter-price__bar"></div>
@@ -104,11 +107,21 @@
                       </div>
                     </div>
                     <div class="filter-price__price-controls">
-                      <label class="filter-price__min-max"><span class="visually-hidden">Минимальная цена</span><input class="filter-price__input-price" type="number" name="min-price" value="0"></label>
+                      <label class="filter-price__min-max"><span class="visually-hidden">Минимальная цена</span><input class="filter-price__input-price filter-price__input-price--min" type="text" name="min-price" value="0"></label>
                       <span class="dash">—</span>
-                      <label class="filter-price__min-max"><span class="visually-hidden">Максимальная цена</span><input class="filter-price__input-price" type="number" name="max-price" value="50000"></label>  
+                      <label class="filter-price__min-max"><span class="visually-hidden">Максимальная цена</span><input class="filter-price__input-price filter-price__input-price--max" type="text" name="max-price" value="50000"></label>  
                     </div>
+                  </div> -->
+                  <div class="filter-price">
+                    <div class="filter-price__range-controls">
+                    <div class="filter-price__range"></div>
+                    </div>
+                    <div class="filter-price__price-controls">
+                    <input type="number" class="filter-price__input-price filter-price__input-price--min" />
+                    <input type="number" class="filter-price__input-price filter-price__input-price--max"/>
                   </div>
+                  </div>
+            
               </fieldset>
               <fieldset class="filter__group filter__group--maker">
                   <legend class="filter__title filter__title--maker">Производители:</legend>
