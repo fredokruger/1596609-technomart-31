@@ -24,7 +24,7 @@ let minCostInput = document.querySelector('.filter-price__input-price--min'),
 	});
 
 	minCostInput.addEventListener('change', function(){
-		filterPrice.noUiSlider.set([null, this.value]);
+		filterPrice.noUiSlider.set([this.value, null]);
 	});
 
 	maxCostInput.addEventListener('change', function(){
