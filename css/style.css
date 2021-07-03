@@ -186,7 +186,7 @@ body {
   position: relative;
 }
 .search__input {
-  width: 271px;
+  width: 270px;
   height: 42px;
   font-size: 18px;
   background-color: transparent;
@@ -202,7 +202,6 @@ body {
   outline: none;
   font-size: 18px;
   padding-left: 42px;
-  width: 271px;
 }
 .search__icon {
   position: absolute;
@@ -239,10 +238,12 @@ body {
 /*Закладки, корзина, оформить*/
 .header-top__list {
   display: flex;
+  max-width: 450px;
   align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
+  flex-wrap: wrap;
 }
 .header-top__item {
   display: flex;
@@ -373,6 +374,8 @@ body {
 .header-middle__authorization {
   display: flex;
   align-items: flex-start;
+  max-width: 300px;
+  flex-wrap: wrap;
 }
 .sign-button,
 .sign-button:link,
@@ -388,6 +391,7 @@ body {
   line-height: 21px;
   background-color: var(--basic-white);
   transition: all 0.1s;
+  margin-bottom: 10px;
 }
 .sign-button:hover,
 .sign-button:hover .signin-button__icon {
