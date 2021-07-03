@@ -101,7 +101,7 @@
   border: 8px solid var(--basic-white);
   background-color: var(--basic-greylight);
   z-index: 2;
-  transform: translate(0, -50%);
+  transform: translate(50%, -50%);
   box-shadow: 0 2px var(--lightgrey);
 }
 .noUi-handle:hover,
@@ -139,5 +139,5 @@
 .dash {
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 18px;
-  color: #444444;
+  color: var(--dash);
 }
