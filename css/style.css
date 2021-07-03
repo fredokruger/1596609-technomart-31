@@ -731,6 +731,7 @@ body {
   margin: 0 auto;
 }
 .offer-slider__control {
+  position: relative;
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -739,6 +740,14 @@ body {
   border-radius: 50%;
   background-color: var(--basic-white);
   transition: all 0.1s;
+}
+.offer-slider__control:after {
+  position: absolute;
+  content: "";
+  top: -8px;
+  bottom: -8px;
+  right: -8px;
+  left: -8px;
 }
 .offer-slider__control:hover {
   cursor: pointer;
@@ -2167,6 +2176,7 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-greylight);
   cursor: pointer;
 }
+
 .noUi-handle {
   position: absolute;
   display: flex;
@@ -2178,6 +2188,15 @@ input::-webkit-inner-spin-button {
   background-color: var(--basic-greylight);
   z-index: 2;
   transform: translate(50%, -50%);
+}
+.noUi-base::after,
+.noUi-handle::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  bottom: -7px;
+  right: -7px;
+  left: -7px;
 }
 .noUi-handle:hover,
 .noUi-handle:focus {
