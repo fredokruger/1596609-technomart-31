@@ -9,9 +9,7 @@
     <link rel="manifest" href="../manifest.webmanifest">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
-    <script defer src="../js/jquery-3.6.0.min.js"></script>
-    <script defer src="../js/jquery-ui.min.js"></script>
-    <script defer src="../js/filterprice.js"></script>
+    <script src="../js/nouislider.min.js"></script>
 </head>
 <body class="page-body">
   <header class="catalog-header">
@@ -112,14 +110,11 @@
                       <label class="filter-price__min-max"><span class="visually-hidden">Максимальная цена</span><input class="filter-price__input-price filter-price__input-price--max" type="text" name="max-price" value="50000"></label>  
                     </div>
                   </div> -->
-                  <div class="filter-price">
-                    <div class="filter-price__range-controls">
-                    <div class="filter-price__range"></div>
-                    </div>
-                    <div class="filter-price__price-controls">
-                    <input type="number" name="min-price"  class="filter-price__input-price filter-price__input-price--min" />
-                    <input type="number" name="max-price"  class="filter-price__input-price filter-price__input-price--max"/>
-                  </div>
+                  <div class="filter-price"></div>
+                  <div class="filter-price__price-controls">
+                    <input type="number" name="min-price" class="filter-price__input-price filter-price__input-price--min"/>
+                    <span class="dash">—</span>
+                    <input type="number" name="max-price" class="filter-price__input-price filter-price__input-price--max"/>
                   </div>
             
               </fieldset>
@@ -366,6 +361,7 @@
   </section>
   <div class="popup-container"><!--Подложка--></div>
   <script src="../js/focus-visible.min.js"></script>
+  <script src="../js/filterprice.js"></script>
   <script src="../js/script.js"></script>
 </body>
 </html>
