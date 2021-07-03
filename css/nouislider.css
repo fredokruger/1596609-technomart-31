@@ -98,16 +98,16 @@
   height: 20px;
   cursor: pointer;
   border-radius: 50%;
-  border: 8px solid var(--basic-white);
+  box-shadow: inset 0 0 0 8px var(--basic-white), 0 2px var(--lightgrey);
   background-color: var(--basic-greylight);
   z-index: 2;
   transform: translate(50%, -50%);
-  box-shadow: 0 2px var(--lightgrey);
 }
 .noUi-handle:hover,
 .noUi-handle:focus {
   outline: none;
-  box-shadow: 0 0 5px var(--success), 0 2px var(--lightgrey);
+  box-shadow: inset 0 0 0 8px var(--basic-white), 0 0 5px var(--success),
+    0 2px var(--lightgrey);
 }
 .noUi-connect {
   position: absolute;
