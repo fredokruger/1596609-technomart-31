@@ -1809,7 +1809,7 @@ body {
   mask: url("../img/icons/radio-off.svg") 50% 50% / contain no-repeat;
   background-color: var(--basic-greylight);
   margin-right: 12px;
-  transition: all 0.1s;
+  transition: background-color 0.1s;
 }
 .filter__check--maker:checked ~ .filter__name--maker::before {
   width: 27px;
