@@ -1955,9 +1955,6 @@ body {
   transition: all 0.1s;
   margin-bottom: 5px;
 }
-.sorting__order:not(:last-of-type) {
-  margin-bottom: 10px;
-}
 .sorting__order:focus {
   outline: 3px solid var(--success);
 }
@@ -1966,6 +1963,7 @@ body {
 }
 .sorting__item--order:not(:last-child) {
   margin-right: 21px;
+  margin-bottom: 10px;
 }
 
 .sorting__icon {
