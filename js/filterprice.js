@@ -4,6 +4,7 @@ let filterPrice = document.querySelector('.filter-price');
 noUiSlider.create(filterPrice, {
     start: [0, 30000],
     connect: true,
+    margin:5000,
     range: {
         'min': 0,
         'max': 50000
@@ -30,3 +31,6 @@ let minCostInput = document.querySelector('.filter-price__input-price--min'),
 	maxCostInput.addEventListener('change', function(){
 		filterPrice.noUiSlider.set([null, this.value]);
 	});
+
+
+

@@ -9,8 +9,6 @@
     <link rel="manifest" href="../manifest.webmanifest">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/nouislider.css">
-    <script src="../js/nouislider.min.js"></script>
 </head>
 <body class="page-body">
   <header class="catalog-header">
@@ -97,7 +95,9 @@
               <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="filter__group filter__group--price">
                   <legend class="filter__title filter__title--price">Цена:</legend>
-                  <!--<div class="filter-price">
+                  
+                  <!-- Верстка ползунков без nouislider
+                    <div class="filter-price">
                     <div class="filter-price__range-controls">
                       <div class="filter-price__scale">
                         <div class="filter-price__bar"></div>
@@ -361,6 +361,7 @@
   </section>
   <div class="popup-container"><!--Подложка--></div>
   <script src="../js/focus-visible.min.js"></script>
+  <script src="../js/nouislider.min.js"></script>
   <script src="../js/filterprice.js"></script>
   <script src="../js/script.js"></script>
 </body>
