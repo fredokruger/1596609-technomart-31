@@ -942,7 +942,7 @@ body {
   position: absolute;
   border: 20px solid var(--basic-white);
   border-left-color: transparent;
-  border-right: 1px solid white;
+  border-right: 1px solid transparent;
   right: -1px;
 }
 .card-item__new-price:focus {
