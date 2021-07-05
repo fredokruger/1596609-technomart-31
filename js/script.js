@@ -41,7 +41,7 @@ document.addEventListener('keydown', function (evt) { //на клавишу
         popupOpenClose(false);
     }
   });
-  containerPopup.addEventListener('click', function() {
+  containerPopup.addEventListener('click', function() { //на зону вне попапа
     popupOpenClose(false); 
   });
 
