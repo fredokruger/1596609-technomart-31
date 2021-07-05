@@ -10,8 +10,6 @@ noUiSlider.create(filterPrice, {
         'max': 50000
     }
 });
-
-
 let minCostInput = document.querySelector('.filter-price__input-price--min'),
 		maxCostInput = document.querySelector('.filter-price__input-price--max');
 
