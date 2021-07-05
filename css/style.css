@@ -1965,7 +1965,6 @@ body {
 }
 .sorting__item--order:not(:last-child) {
   margin-right: 21px;
-  margin-bottom: 10px;
 }
 
 .sorting__icon {
