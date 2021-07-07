@@ -359,6 +359,7 @@ body {
 }
 .header-middle__phone-number::before {
   display: inline-block;
+  vertical-align: middle;
   content: "";
   width: 19px;
   height: 19px;
@@ -730,6 +731,7 @@ body {
 .offer-slider__control {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 10px;
   height: 10px;
   border: none;
@@ -1205,6 +1207,7 @@ body {
 .about__delivery-item::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 25px;
   height: 2px;
   background-color: var(--basic-red);
@@ -1238,6 +1241,7 @@ body {
 .contacts__map-button:link,
 .contacts__map-button:visited {
   display: inline-block;
+  vertical-align: middle;
   width: 300px;
   height: 158px;
   margin-bottom: 26px;
@@ -1296,6 +1300,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: -58px;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap-reverse;
@@ -1320,8 +1325,8 @@ body {
 .footer-top__navigation-link:focus {
   outline: 3px solid var(--success);
 }
-.footer-top__navigation-item:not(:last-child) {
-  margin-right: 58px;
+.footer-top__navigation-item {
+  margin-left: 58px;
 }
 .footer-top__navigation-link--top {
   color: var(--footer-contacts);
@@ -1369,6 +1374,7 @@ body {
 .social__link:link,
 .social__link:visited {
   display: inline-block;
+  vertical-align: middle;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -1479,6 +1485,7 @@ body {
 }
 .contact-popup__label {
   display: inline-block;
+  vertical-align: middle;
   font-size: 18px;
   margin-bottom: 11px;
 }
@@ -1656,6 +1663,7 @@ body {
 }
 .breadcrumbs__item:not(:last-child)::after {
   display: inline-block;
+  vertical-align: middle;
   content: "";
   width: 8px;
   height: 12px;
